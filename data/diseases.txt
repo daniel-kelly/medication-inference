@@ -1,0 +1,21 @@
+hypertension
+heart failure
+diabetes
+asthma
+epilepsy
+lung cancer
+prostate cancer
+ovarian cancer
+leukemia
+rheumatoid arthritis
+psoriasis
+chronic kidney disease
+alzheimer's disease
+depression
+anxiety
+rheumatoid arthritis
+crohn's disease
+dementia
+ulcerative colitis
+chronic obstructive pulmonary disease
+lupus
