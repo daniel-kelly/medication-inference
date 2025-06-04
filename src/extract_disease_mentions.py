@@ -81,7 +81,7 @@ def process_fda_file(input_path, disease_terms):
     return results
 
 if __name__ == '__main__':
-    disease_terms = load_disease_terms('../data/diseases.txt')
+    disease_terms = load_disease_terms('../data/reference/diseases.txt')
     data = process_fda_file('../data/raw_fda_labels.jsonl', disease_terms)
 
     for entry in data[:15]:

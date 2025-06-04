@@ -1,0 +1,19 @@
+api_key: "niBOH6xHMCgaizNvXzBuEXWXnkAT3kWcheuKgoht"
+batch_size: 100
+max_requests_per_min: 240
+checkpoint_file: "../data/checkpoint.json"
+output_dir: "../data/raw"
+essential_fields:
+  - id
+  - effective_time
+  - generic_name
+  - brand_name
+  - manufacturer_name
+  - product_ndc
+  - substance_name
+  - route
+  - dosage_form
+  - purpose
+  - indications_and_usage
+  - description
+  - clinical_pharmacology
