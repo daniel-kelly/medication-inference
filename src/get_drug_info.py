@@ -14,8 +14,8 @@ MAX_REQUESTS_PER_MIN = config["max_requests_per_min"]
 CHECKPOINT_FILE = config["checkpoint_file"]
 OUTPUT_DIR = config["output_dir"]
 ESSENTIAL_FIELDS = set(config["essential_fields"])
+ALLOWED_PRODUCT_TYPES = set(config.get("allowed_product_types", []))
 
-# Ensure output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Load or initialize checkpoint
@@ -26,44 +26,72 @@ if os.path.exists(CHECKPOINT_FILE):
 else:
     skip = 0
 
-requests_made = 0
+# NDC cache and written set
+ndc_cache = {}
+written_ndcs = set()
+
+ALL_NDC_PATH = os.path.join(OUTPUT_DIR, "all_ndcs.jsonl")
 
 def get_field(entry, field):
-    # Try top-level field, then openfda subfield
     value = entry.get(field)
     if value is None and "openfda" in entry:
         value = entry["openfda"].get(field)
     return value
 
-def clean_entry(entry):
-    # Pull all essential fields from top-level and openfda
-    cleaned = {}
+def fetch_ndc_data(product_ndc):
+    if product_ndc in ndc_cache:
+        return ndc_cache[product_ndc]
+    url = "https://api.fda.gov/drug/ndc.json"
+    params = {
+        "search": f"product_ndc:{product_ndc}",
+        "limit": 1,
+        "api_key": API_KEY
+    }
+    try:
+        res = requests.get(url, params=params)
+        res.raise_for_status()
+        results = res.json().get("results", [])
+        if results:
+            ndc_cache[product_ndc] = results[0]
+            return results[0]
+    except requests.exceptions.RequestException:
+        pass
+    ndc_cache[product_ndc] = None
+    return None
+
+def clean_and_merge(label_entry, ndc_entry):
+    merged = {}
     for field in ESSENTIAL_FIELDS:
-        value = get_field(entry, field)
-        if value is not None:
-            cleaned[field] = value
+        val = get_field(label_entry, field)
+        if val is None and ndc_entry:
+            val = ndc_entry.get(field)
+        if val is not None:
+            # If indications_and_usage is a list, flatten it to a string
+            if field in ["indications_and_usage", "purpose", "description", "clinical_pharmacology"] and isinstance(val, list):
+                val = " ".join(val)
+            merged[field] = val
 
     # Require at least one known name field
     name_fields = ['generic_name', 'brand_name', 'substance_name']
     has_valid_name = False
     for field in name_fields:
-        value = get_field(entry, field)
+        value = merged.get(field)
         if value:
             values = value if isinstance(value, list) else [value]
             if any(str(v).strip().lower() != "unknown" for v in values):
                 has_valid_name = True
                 break
 
-    if not has_valid_name:
-        return None
+    return merged if has_valid_name else None
 
-    return cleaned
 
-# Main loop
+requests_made = 0
+
 while True:
     params = {
         "limit": BATCH_SIZE,
         "skip": skip,
+        "api_key": API_KEY
         "api_key": API_KEY
     }
 
@@ -77,22 +105,64 @@ while True:
             break
 
         saved_count = 0
+        all_count = 0
 
-        for entry in results:
-            cleaned = clean_entry(entry)
-            if not cleaned:
-                continue
+        with open(ALL_NDC_PATH, "a", encoding="utf-8") as all_out:
+            for entry in results:
+                product_type = get_field(entry, "product_type")
+                if isinstance(product_type, list):
+                    product_type = product_type[0]
+                if product_type not in ALLOWED_PRODUCT_TYPES:
+                    continue
 
-            routes = get_field(entry, "route") or ["unknown"]
-            if not isinstance(routes, list):
-                routes = [routes]
+                product_ndc = get_field(entry, "product_ndc")
+                product_ndcs = product_ndc if isinstance(product_ndc, list) else [product_ndc]
 
-            for route in routes:
-                route = route.lower().replace("/", "_").replace(" ", "_")
-                output_path = os.path.join(OUTPUT_DIR, f"{route}.jsonl")
-                with open(output_path, "a", encoding="utf-8") as f_out:
-                    f_out.write(json.dumps(cleaned) + "\n")
-                saved_count += 1
+                ndc_metadata = []
+                ndc_entry = None
+
+                for ndc in product_ndcs:
+                    if ndc:
+                        ndc_data = fetch_ndc_data(ndc)
+                        if ndc_data:
+                            ndc_metadata.append(ndc_data)
+                            if not ndc_entry:
+                                ndc_entry = ndc_data
+
+                merged = clean_and_merge(entry, ndc_entry)
+
+                combined_entry = merged or {}
+                if ndc_metadata:
+                    combined_entry["ndc_metadata"] = ndc_metadata
+                combined_entry["product_ndc"] = product_ndcs
+
+                all_out.write(json.dumps(combined_entry) + "\n")
+                all_count += 1
+
+                if not merged:
+                    continue
+
+                # Check if we've already written this
+                is_duplicate = any(ndc in written_ndcs for ndc in product_ndcs)
+                if is_duplicate:
+                    continue
+
+                routes = get_field(entry, "route") or (ndc_entry.get("route") if ndc_entry else None)
+                if not routes:
+                    routes = ["unknown"]
+                elif not isinstance(routes, list):
+                    routes = [routes]
+
+                for route in routes:
+                    slug = route.lower().replace(" ", "_").replace("/", "_") if route else "unknown"
+                    out_path = os.path.join(OUTPUT_DIR, f"{slug}.jsonl")
+                    with open(out_path, "a", encoding="utf-8") as f_out:
+                        f_out.write(json.dumps(combined_entry) + "\n")
+                        saved_count += 1
+
+                for ndc in product_ndcs:
+                    if ndc:
+                        written_ndcs.add(ndc)
 
         skip += BATCH_SIZE
         requests_made += 1
@@ -101,7 +171,7 @@ while True:
         with open(CHECKPOINT_FILE, "w") as f:
             json.dump({"skip": skip}, f)
 
-        print(f"Fetched {len(results)} items, saved {saved_count}. Total so far: {skip}")
+        print(f"Fetched {len(results)} label entries, saved {saved_count}, wrote {all_count} to all_ndcs. Total so far: {skip}")
 
         if requests_made % MAX_REQUESTS_PER_MIN == 0:
             print("Rate limit hit. Sleeping 60 seconds...")

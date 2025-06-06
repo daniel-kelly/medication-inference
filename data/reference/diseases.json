@@ -1,0 +1,63 @@
+DISEASE_PATTERNS = {
+    "Cardiovascular Diseases": {
+        "Hypertension": r"\bhypertension\b",
+        "Heart failure": r"\bheart failure\b",
+        "Atrial fibrillation": r"\batrial fibrillation\b|\bAFib\b",
+        "Deep vein thrombosis": r"\bdeep vein thrombosis\b|\bDVT\b",
+    },
+    "Metabolic & Endocrine Disorders": {
+        "Diabetes": r"\bdiabetes\b|\bT1D\b|\bT2D\b|\btype ?[12] diabetes\b",
+        "Polycystic ovary syndrome": r"\bpolycystic ovary syndrome\b|\bPCOS\b",
+    },
+    "Respiratory Diseases": {
+        "Asthma": r"\basthma\b",
+        "Chronic obstructive pulmonary disease": r"\bchronic obstructive pulmonary disease\b|\bCOPD\b",
+        "Idiopathic pulmonary fibrosis": r"\bidiopathic pulmonary fibrosis\b|\bIPF\b",
+        "Cystic fibrosis": r"\bcystic fibrosis\b|\bCF\b",
+        "Pneumonia": r"\bpneumonia\b",
+    },
+    "Neurological Disorders": {
+        "Epilepsy": r"\bepilepsy\b",
+        "Alzheimer's disease": r"\balzheimer(?:'s)? disease\b|\bAD\b",
+        "Parkinson's disease": r"\bparkinson(?:'s)? disease\b|\bPD\b",
+        "Multiple sclerosis": r"\bmultiple sclerosis\b|\bMS\b",
+        "Amyotrophic lateral sclerosis": r"\bamyotrophic lateral sclerosis\b|\bALS\b",
+        "Migraine": r"\bmigraine\b",
+        "Narcolepsy": r"\bnarcolepsy\b",
+    },
+    "Cancers": {
+        "Lung cancer": r"\blung cancer\b",
+        "Prostate cancer": r"\bprostate cancer\b",
+        "Ovarian cancer": r"\bovarian cancer\b",
+        "Leukemia": r"\bleukemia\b",
+        "Breast cancer": r"\bbreast cancer\b",
+        "Lymphoma": r"\blymphoma\b",
+        "Melanoma": r"\bmelanoma\b",
+    },
+    "Autoimmune / Inflammatory Diseases": {
+        "Rheumatoid arthritis": r"\brheumatoid arthritis\b|\bRA\b",
+        "Psoriasis": r"\bpsoriasis\b",
+        "Lupus": r"\blupus\b|\bSLE\b",
+        "Crohn's disease": r"\bcrohn(?:'s)? disease\b",
+        "Ulcerative colitis": r"\bulcerative colitis\b|\bUC\b",
+        "Ankylosing spondylitis": r"\bankylosing spondylitis\b|\bAS\b",
+    },
+    "Hematologic / Rare Diseases": {
+        "Hemophilia": r"\bhemophilia\b",
+        "Sickle cell disease": r"\bsickle cell (?:anemia|disease)\b|\bSCD\b",
+        "Thrombocytopenia": r"\bthrombocytopenia\b",
+        "Alpha-1 antitrypsin deficiency": r"\balpha[- ]?1 antitrypsin deficiency\b|\bAATD\b",
+    },
+    "Mental Health / Psychiatric Disorders": {
+        "Depression": r"\bdepression\b|\bMDD\b",
+        "Anxiety": r"\banxiety\b|\bGAD\b",
+        "Schizophrenia": r"\bschizophrenia\b",
+        "Bipolar disorder": r"\bbipolar (?:disorder|disease)?\b",
+    },
+    "Renal Disorders": {
+        "Chronic kidney disease": r"\bchronic kidney disease\b|\bCKD\b",
+    },
+    "Cognitive Decline / Dementia": {
+        "Dementia": r"\bdementia\b",
+    },
+}
