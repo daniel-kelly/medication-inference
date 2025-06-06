@@ -1,0 +1,4337 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="source_file" attr.type="string" />
+  <key id="d2" for="edge" attr.name="dosage_form" attr.type="string" />
+  <key id="d1" for="edge" attr.name="route" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="TAZAROTENE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="psoriasis">
+      <data key="d0">indication</data>
+    </node>
+    <node id="AMBROSIA ARTEMISIIFOLIA">
+      <data key="d0">medication</data>
+    </node>
+    <node id="asthma">
+      <data key="d0">indication</data>
+    </node>
+    <node id="BETAMETHASONE SODIUM PHOSPHATE AND BETAMETHASONE ACETATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ulcerative colitis">
+      <data key="d0">indication</data>
+    </node>
+    <node id="rheumatoid arthritis">
+      <data key="d0">indication</data>
+    </node>
+    <node id="lupus">
+      <data key="d0">indication</data>
+    </node>
+    <node id="TRIAMCINOLONE ACETONIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METHYLPREDNISOLONE ACETATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="KENALOG">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DEXAMETHASONE SODIUM PHOSPHATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="leukemia">
+      <data key="d0">indication</data>
+    </node>
+    <node id="PHYTONADIONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METHYLPREDNISOLONE SODIUM SUCCINATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="THIAMINE HYDROCHLORIDE INJECTION, SOLUTION">
+      <data key="d0">medication</data>
+    </node>
+    <node id="heart failure">
+      <data key="d0">indication</data>
+    </node>
+    <node id="BUMETANIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FUROSEMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METHOTREXATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="THIAMINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NALOXONE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="depression">
+      <data key="d0">indication</data>
+    </node>
+    <node id="HYDRALAZINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="hypertension">
+      <data key="d0">indication</data>
+    </node>
+    <node id="DIAZEPAM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="anxiety">
+      <data key="d0">indication</data>
+    </node>
+    <node id="HYDROXYZINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="OXYTOCIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="diabetes">
+      <data key="d0">indication</data>
+    </node>
+    <node id="SODIUM CATION, SODIUM BICARBONATE, ANHYDROUS DEXTROSE, MAGNESIUM SULFATE, POTASSIUM CHLORIDE, CALCIUM CHLORIDE, SODIUM PHOSPHATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TOCILIZUMAB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DOXORUBICIN HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AZACITIDINE FOR">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ZOLEDRONIC ACID">
+      <data key="d0">medication</data>
+    </node>
+    <node id="prostate cancer">
+      <data key="d0">indication</data>
+    </node>
+    <node id="DOCETAXEL ANHYDROUS">
+      <data key="d0">medication</data>
+    </node>
+    <node id="lung cancer">
+      <data key="d0">indication</data>
+    </node>
+    <node id="DECITABINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ESMOLOL HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FLUDARABINE PHOSPHATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SODIUM NITROPRUSSIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ALLOPURINOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ESMOLOL HYDROCHLORIDE IN SODIUM CHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CYCLOPHOSPHAMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PEMETREXED DISODIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NELARABINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="RESLIZUMAB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AZACITIDINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BUSULFAN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SODIUM BICARBONATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="INSULIN LISPRO">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GEMCITABINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ovarian cancer">
+      <data key="d0">indication</data>
+    </node>
+    <node id="MILRINONE LACTATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PARICALCITOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="chronic kidney disease">
+      <data key="d0">indication</data>
+    </node>
+    <node id="ABATACEPT">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LEVETIRACETAM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="epilepsy">
+      <data key="d0">indication</data>
+    </node>
+    <node id="CLOFARABINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BEVACIZUMAB-AWWB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="IDARUBICIN HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LEVETIRACETAM INJECTION">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PACLITAXEL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PEMIVIBART">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ERYTHROPOIETIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DIFELIKEFALIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DESMOPRESSIN ACETATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DOCETAXEL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BENDAMUSTINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NICARDIPINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DARBEPOETIN ALFA">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ARSENIC TRIOXIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="VINORELBINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="INSULIN ASPART">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AMIVANTAMAB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ETOPOSIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PACLITAXEL PROTEIN-BOUND PARTICLES">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MITOXANTRONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CHLOROTHIAZIDE SODIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DONANEMAB-AZBT">
+      <data key="d0">medication</data>
+    </node>
+    <node id="dementia">
+      <data key="d0">indication</data>
+    </node>
+    <node id="alzheimer's disease">
+      <data key="d0">indication</data>
+    </node>
+    <node id="TRAVOPROST OPHTHALMIC SOLUTION, 0.004%">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TRAVOPROST">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DORZOLAMIDE HYDROCHLORIDE TIMOLOL MALEATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TIMOLOL MALEATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BIMATOPROST">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DORZOLAMIDE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BRIMONIDINE TARTRATE AND TIMOLOL MALEATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DORZOLAMIDE HYDROCHLORIDE AND TIMOLOL MALEATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BRINZOLAMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DDORZOLAMIDE HYDROCHLORIDE TIMOLOL MALEATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LATANOPROST">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LATANOPROST OPHTHALMIC SOLUTION 0.005%">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NAPROXEN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TRAMETINIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GLIMEPIRIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SACUBITRIL AND VALSARTAN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ETODOLAC">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SERTRALINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ENALAPRIL MALEATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="OLANZAPINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DIVALPROEX SODIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LAMOTRIGINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AMLODIPINE BESYLATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="RIVASTIGMINE TARTRATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LORLATINIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PREDNISONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DULOXETINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AMITRIPTYLINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="EZETIMIBE AND SIMVASTATIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LEFLUNOMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="VERAPAMIL HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GLIPIZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SEVELAMER CARBONATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="IBUPROFEN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SIMVASTATIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DILTIAZEM HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="INDOMETHACIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LORAZEPAM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SITAGLIPTIN AND METFORMIN HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CHOLESTYRAMINE LIGHT">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PAROXETINE HYDROCHLORIDE HEMIHYDRATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="HYDROXYCHLOROQUINE SULFATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ATORVASTATIN CALCIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="VALSARTAN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LISINOPRIL AND HYDROCHLOROTHIAZIDE TABLETS">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TAMSULOSIN HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FENOFIBRATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GAUNFACINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CLONIDINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NISOLDIPINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TOPIRAMATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METOPROLOL TARTRATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CELECOXIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LISINOPRIL AND HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MESALAMINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CARVEDILOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CHLORTHALIDONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TRANDOLAPRIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METFORMIN HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="COLESEVELAM HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PROPRANOLOL HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ATORVASTATIN FILM COATED">
+      <data key="d0">medication</data>
+    </node>
+    <node id="VENLAFAXINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="OLMESARTAN MEDOXOMIL-HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MEB PURI-MEGA">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METOPROLOL SUCCINATE ER TABLETS">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BENAZEPRIL HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GABAPENTIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DEXAMETHASONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="RAMIPRIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SPIRONOLACTONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PENICILLAMINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METHYLPREDNISOLONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FENOPROFEN CALCIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DAPAGLIFLOZIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PROCHLORPERAZINE MALEATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LISINOPRIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LOSARTAN POTASSIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FLUOXETINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FLUOXETINE HCL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="HYDROXYZINE PAMOATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BUSPIRONE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LOVASTATIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="VALPROIC ACID">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METYROSINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METOPROLOL SUCCINATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ALPRAZOLAM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="IMATINIB MESYLATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="RUCAPARIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SULFASALAZINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BALSALAZIDE DISODIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="IRBESARTAN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CINACALCET">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PHENTERMINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="IMIPRAMINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MINOXIDIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CARBAMAZEPINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AMLODIPINE AND BENAZEPRIL HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AMLODIPINE AND OLMESARTAN MEDOXOMIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PIOGLITAZONE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="OMEGA-3-ACID ETHYL ESTERS">
+      <data key="d0">medication</data>
+    </node>
+    <node id="OXAZEPAM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="POTASSIUM CHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="OLMESARTAN MEDOXOMIL AND HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DIGOXIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="IBUPROFEN AND FAMOTIDINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PIROXICAM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MEB PURI-VEGA">
+      <data key="d0">medication</data>
+    </node>
+    <node id="THEOPHYLLINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TRIAMTERENE AND HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LOSARTAN POTASSIUM AND HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="COLESTIPOL HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DOXEPIN HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GLIPIZIDE AND METFORMIN HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DONEPEZIL HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TORSEMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AZATHIOPRINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="VENLAFAXINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TRETINOIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BUDESONIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ESCITALOPRAM ORAL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GUANFACINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NEBIVOLOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NABUMETONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="OLMESARTAN MEDOXOMIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LABETALOL HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GLYBURIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MEMANTINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TERAZOSIN HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FLURBIPROFEN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DULOXETINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FLUOXETINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="VALSARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GEMFIBROZIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PAROXETINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FELODIPINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PIOGLITAZONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CHOLESTYRAMINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PINDOLOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SILDENAFIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="crohn's disease">
+      <data key="d0">indication</data>
+    </node>
+    <node id="ACARBOSE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="INDAPAMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ESCITALOPRAM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MELOXICAM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METFORMIN HCL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ACETAZOLAMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PREDNISOLONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CAROSPIR">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MECAMYLAMINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="RELUGOLIX">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ARSENIC TRIOXIDE - HISTAMINE DIHYDROCHLORIDE - DERMATOPHAGOIDES PTERONYSSINUS - MAGNESIUM PHOSPHATE, DIBASIC TRIHYDRATE - STRYCHNOS NUX-VOMICA SEED - ASPIDOSPERMA QUEBRACHO-BLANCO BARK - SUPLHUR -">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MONTELUKAST SODIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DILTIAZEM HYDROCHLORIDE EXTENDED-RELEASE TABLETS">
+      <data key="d0">medication</data>
+    </node>
+    <node id="L-TRYPTOPHAN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PRAZOSIN HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PAROXETINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LURASIDONE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SILDENAFIL CITRATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BISOPROLOL FUMARATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CINACALCET HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DOXAZOSIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CITALOPRAM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METOLAZONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ACITRETIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DICLOFENAC POTASSIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ARNICA MONTANA, ANAMIRTA COCCULUS, POTASSIUM PHOSPHATE, GELSEMIUM SEMPERVIRENS, STRYCHNOS NUX VOMICA, SILVER NITRATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NIFEDIPINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ZONISAMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NORTRIPTYLINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ESCITALOPRAM OXALATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ATENOLOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DICLOFENAC SODIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SERTRALINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NADOLOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DUTASTERIDE AND TAMSULOSIN HYDROCHLORIDE CAPSULES">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FOSINOPIRL SODIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ABIRATERONE ACETATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TERBUTALINE SULFATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ATORVASTATIN CALCIUM, FILM COATED">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DOXAZOSIN MESYLATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="OXAPROZIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MEMANTINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GEFITINIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TADALAFIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FELBAMATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PHENDIMETRAZINE TARTRATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ADAGRASIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="HYDROCORTISONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CLOTRIMAZOLE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LEVETIRACETAM ORAL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PHENOXYBENZAMINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TELMISARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FOLLICULINUM, OOPHORINUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SPIRONOLACTONE AND HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ALOGLIPTIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NATEGLINIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DICLOFENAC POTASSIUM, FILM COATED">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ETHOSUXIMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="IRBESARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="HYDROXYUREA">
+      <data key="d0">medication</data>
+    </node>
+    <node id="EMOTIONAL HEALTH BOOSTER">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NAPROXEN SODIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="IBRUTINIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AMBRISENTAN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="EMOTIONAL REBALANCE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CAPTOPRIL AND HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DOXEPIN HCL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TARAXACUM OFFICINALE, HYDRASTIS CANADENSIS, ACETYLCHOLINE CHLORIDE, HISTAMINUM HYDROCHLORICUM, ADRENALINUM, GABA (GAMMA-AMINOBUTYRIC ACID), NOREPINEPHRINE (BITARTRATE), TYRAMINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CANDESARTAN CILEXETIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ADRENALINUM, CHOLESTERINUM, FOLLICULINUM, HYPOTHALAMUS, OOPHORINUM, PULSATILLA">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GALANTAMINE HYDROBROMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TAURINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="EMPAGLIFLOZIN AND METFORMIN HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BRIGATINIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SULINDAC">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GALANTAMINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AZILSARTAN KAMEDOXOMIL AND CHLORTHALIDONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METOPROLOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AMLODIPINE BESYLATE AND BENAZEPRIL HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TRANDOLAPRIL TABLETS">
+      <data key="d0">medication</data>
+    </node>
+    <node id="IMATINIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DASATINIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="RYDAPT">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DICLOFENAC SODIUM AND MISOPROSTOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TICAGRELOR">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GABA">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MEMANTINE HCL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MORPHINE SULFATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SALMETEROL XINAFOATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="chronic obstructive pulmonary disease">
+      <data key="d0">indication</data>
+    </node>
+    <node id="PRAZOSIN HCL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TERAZOSIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AMLODIPINE BESYLATE AND OLMESARTAN MEDOXOMIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AMLODIPINE AND ATORVASTATIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FINASTERIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TALAZOPARIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CAPTOPRIL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GUANFACINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METFORMIN HYDROCHLORIDE EXTENDED-RELEASE TABLETS">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ATENOLOL AND CHLORTHALIDONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PREDNISOLONE SODIUM PHOSPHATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ALOGLIPTIN AND METFORMIN HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TOLMETIN SODIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BISOPROLOL FUMARATE AND HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MERCAPTOPURINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TELMISARTAN AND AMLODIPINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="METOPROLOL SUCCINATE ER">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ADRENAL SUPPORT">
+      <data key="d0">medication</data>
+    </node>
+    <node id="NAPROXEN AND ESOMEPRAZOLE MAGNESIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PONATINIB HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PRALSETINIB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="VERICIGUAT">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DUTASTERIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TOPIRAMATE SPINKLE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="OXCARBAZEPINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SERTRALINE HCL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="EMPAGLIFLOZIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MEPROBAMATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PANAX GINSENG">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AQUILEGIA VULGARIS, AVENA SATIVA, CHAMOMILLA, COFFEA CRUDA, CYPRIPEDIUM PUBESCENS, HUMULUS LUPULUS, HYPERICUM PERFORATUM, KALI PHOSPHORICUM, MELATONIN, MELISSA OFFICINALIS, NATRUM MURIATICUM, PASSIFLORA INCARNATA, VALERIANA OFFICINALIS">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AMILORIDE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AMLODIPINE VALSARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ACONITUM NAPELLUS, ARGENTUM NITRICUM, ARSENICUM ALBUM, CALCAREA CARBONICA, IGNATIA AMARA, KALI CARBONICUM, LACHESIS MUTUS, NATRUM MURIATICUM, PHOSPHORUS, PULSATILLA (PRATENSIS), STAPHYSAGRIA, STRAMONIUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SITAGLIPTIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CYCLOSPORINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="KETOPROFEN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TRIFLUOPERAZINE HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CITALOPRAM HYDROBROMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BEXAGLIFLOZIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SOTAGLIFLOZIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CELESTITE 6X">
+      <data key="d0">medication</data>
+    </node>
+    <node id="EPLERENONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SEVELAMER HYDROCHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="HYDROCORTISONE ACETATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FLUTICASONE PROPIONATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TIOTROPIUM BROMIDE AND OLODATEROL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CROMOLYN SODIUM INHALATION SOLUTION">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FLUTICASONE PROPIONATE AND SALMETEROL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ARFORMOTEROL TARTRATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FORMOTEROL FUMARATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MOMETASONE FUROATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BUDESONIDE AND FORMOTEROL FUMARATE DIHYDRATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="IPRATROPIUM BROMIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DULAGLUTIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="INSULIN GLARGINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LIRAGLUTIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="USTEKINUMAB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SOMATROPIN">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DASIGLUCAGON">
+      <data key="d0">medication</data>
+    </node>
+    <node id="BRODALUMAB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GARLIC, AVENA SATIVA FLOWERING TOP, ANGELICA ARCHANGELICA ROOT, ARABICA COFFEE BEAN, HOLY BASIL LEAF, PASSIFLORA EDULIS FLOWER, SCUTELLARIA LATERIFLORA WHOLE, VERBENA HASTATA TOP, AND MACROPIPER METHYSTICUM ROOT">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TILIA TOMENTOSA BUD">
+      <data key="d0">medication</data>
+    </node>
+    <node id="POPULUS TREMULOIDES WHOLE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="PS-2896 HYDROCORTISONE CREAM 1%, 0.9G">
+      <data key="d0">medication</data>
+    </node>
+    <node id="AQUILARIA MALACCENSIS, PIPER UMBELLATUM, PIPER AURITUM, LEONTOPODIUM NIVALE SUBSP. ALPINUM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CICLOPIROX">
+      <data key="d0">medication</data>
+    </node>
+    <node id="TAZARATONE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ANTI ITCH">
+      <data key="d0">medication</data>
+    </node>
+    <node id="HYDROCORTISONE WITH ALOE ANTI ITCH">
+      <data key="d0">medication</data>
+    </node>
+    <node id="COAL TAR">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CLOBETASOL PROPIONATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="UREA">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LIDOCAINE HYDROCHLORIDE, MENTHOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SALICYLIC ACID">
+      <data key="d0">medication</data>
+    </node>
+    <node id="HYDROCORTISONE ANTI ITCH CREAM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SALICYLIC ACID 3%">
+      <data key="d0">medication</data>
+    </node>
+    <node id="HYDROCORTISONE 1%">
+      <data key="d0">medication</data>
+    </node>
+    <node id="STURGEON EXTRACT">
+      <data key="d0">medication</data>
+    </node>
+    <node id="HYDROCORTISONE CREAM 1%">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FLUOCINOLONE ACETONIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="SALICYLIC ACID 4%">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CALCIPOTRIENE AND BETAMETHASONE DIPROPIONATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GENTAMICIN SULFATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LIDOCAINE AND MENTHOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CALCIPOTRIENE, BETAMETHASONE DIPROPIONATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LIDOTHOL PATCH">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ANACAULASE-BCDB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="MEB GLUCO-VITALITY PATCH">
+      <data key="d0">medication</data>
+    </node>
+    <node id="CLONIDINE TRANSDERMAL SYSTEM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="RIVASTIGMINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ADALIMUMAB">
+      <data key="d0">medication</data>
+    </node>
+    <node id="DROSPIRENONE AND ETHINYL ESTRADIOL">
+      <data key="d0">medication</data>
+    </node>
+    <node id="FUROSEMIDE, BENZALKONIUM CHLORIDE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ADALIMUMAB-AACF">
+      <data key="d0">medication</data>
+    </node>
+    <node id="RASBURICASE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LIDOCAINE HYDROCHLORIDE, TRIAMCINOLONE ACETONIDE, POVIDONE-IODINE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ADALIMUMAB-ADBM">
+      <data key="d0">medication</data>
+    </node>
+    <node id="ADALIMUMAB-RYVK">
+      <data key="d0">medication</data>
+    </node>
+    <node id="LEUPROLIDE ACETATE">
+      <data key="d0">medication</data>
+    </node>
+    <node id="GLUCAGON">
+      <data key="d0">medication</data>
+    </node>
+    <edge source="TAZAROTENE" target="psoriasis">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="DEXAMETHASONE SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">soft_tissue.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="METHOTREXATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="PREDNISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="METHYLPREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="PREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="ACITRETIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="HYDROCORTISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="CYCLOSPORINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="USTEKINUMAB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="BRODALUMAB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="PS-2896 HYDROCORTISONE CREAM 1%, 0.9G">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="AQUILARIA MALACCENSIS, PIPER UMBELLATUM, PIPER AURITUM, LEONTOPODIUM NIVALE SUBSP. ALPINUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="TAZARATONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="ANTI ITCH">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="HYDROCORTISONE WITH ALOE ANTI ITCH">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="COAL TAR">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="CLOBETASOL PROPIONATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="UREA">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="SALICYLIC ACID">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="HYDROCORTISONE ANTI ITCH CREAM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="SALICYLIC ACID 3%">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="HYDROCORTISONE 1%">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="STURGEON EXTRACT">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="HYDROCORTISONE CREAM 1%">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="FLUOCINOLONE ACETONIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="SALICYLIC ACID 4%">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="CALCIPOTRIENE AND BETAMETHASONE DIPROPIONATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="GENTAMICIN SULFATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="CALCIPOTRIENE, BETAMETHASONE DIPROPIONATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="ADALIMUMAB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="ADALIMUMAB-AACF">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="ADALIMUMAB-ADBM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="psoriasis" target="ADALIMUMAB-RYVK">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="AMBROSIA ARTEMISIIFOLIA" target="asthma">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="asthma" target="BETAMETHASONE SODIUM PHOSPHATE AND BETAMETHASONE ACETATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="asthma" target="TRIAMCINOLONE ACETONIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="asthma" target="METHYLPREDNISOLONE ACETATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">soft_tissue.jsonl</data>
+    </edge>
+    <edge source="asthma" target="KENALOG">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="asthma" target="DEXAMETHASONE SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">soft_tissue.jsonl</data>
+    </edge>
+    <edge source="asthma" target="METHYLPREDNISOLONE SODIUM SUCCINATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="asthma" target="HYDROXYZINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="asthma" target="RESLIZUMAB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="asthma" target="PREDNISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="asthma" target="MEB PURI-MEGA">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="asthma" target="DEXAMETHASONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="asthma" target="METHYLPREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="asthma" target="MEB PURI-VEGA">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="asthma" target="THEOPHYLLINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="asthma" target="PREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="asthma" target="ARSENIC TRIOXIDE - HISTAMINE DIHYDROCHLORIDE - DERMATOPHAGOIDES PTERONYSSINUS - MAGNESIUM PHOSPHATE, DIBASIC TRIHYDRATE - STRYCHNOS NUX-VOMICA SEED - ASPIDOSPERMA QUEBRACHO-BLANCO BARK - SUPLHUR -">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="asthma" target="MONTELUKAST SODIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="asthma" target="TERBUTALINE SULFATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="asthma" target="HYDROCORTISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="asthma" target="SALMETEROL XINAFOATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="asthma" target="PREDNISOLONE SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="asthma" target="FLUTICASONE PROPIONATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="asthma" target="TIOTROPIUM BROMIDE AND OLODATEROL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="asthma" target="CROMOLYN SODIUM INHALATION SOLUTION">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="asthma" target="FLUTICASONE PROPIONATE AND SALMETEROL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="asthma" target="ARFORMOTEROL TARTRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="asthma" target="FORMOTEROL FUMARATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="asthma" target="MOMETASONE FUROATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="asthma" target="BUDESONIDE AND FORMOTEROL FUMARATE DIHYDRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="asthma" target="BUDESONIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="asthma" target="LIDOCAINE HYDROCHLORIDE, TRIAMCINOLONE ACETONIDE, POVIDONE-IODINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="BETAMETHASONE SODIUM PHOSPHATE AND BETAMETHASONE ACETATE" target="ulcerative colitis">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="BETAMETHASONE SODIUM PHOSPHATE AND BETAMETHASONE ACETATE" target="rheumatoid arthritis">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="BETAMETHASONE SODIUM PHOSPHATE AND BETAMETHASONE ACETATE" target="lupus">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="TRIAMCINOLONE ACETONIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="METHYLPREDNISOLONE ACETATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">soft_tissue.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="KENALOG">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="DEXAMETHASONE SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">soft_tissue.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="PHYTONADIONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="METHYLPREDNISOLONE SODIUM SUCCINATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="PREDNISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="MESALAMINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="DEXAMETHASONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="METHYLPREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="SULFASALAZINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="BALSALAZIDE DISODIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="BUDESONIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="PREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="HYDROCORTISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="PREDNISOLONE SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="HYDROCORTISONE ACETATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">rectal.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="USTEKINUMAB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="ADALIMUMAB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="ADALIMUMAB-AACF">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="LIDOCAINE HYDROCHLORIDE, TRIAMCINOLONE ACETONIDE, POVIDONE-IODINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="ADALIMUMAB-ADBM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="ulcerative colitis" target="ADALIMUMAB-RYVK">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="TRIAMCINOLONE ACETONIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="METHYLPREDNISOLONE ACETATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">soft_tissue.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="KENALOG">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="DEXAMETHASONE SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">soft_tissue.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="METHYLPREDNISOLONE SODIUM SUCCINATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="METHOTREXATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="TOCILIZUMAB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="ABATACEPT">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="NAPROXEN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="ETODOLAC">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="PREDNISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="LEFLUNOMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="IBUPROFEN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="INDOMETHACIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="HYDROXYCHLOROQUINE SULFATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="CELECOXIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="DEXAMETHASONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="PENICILLAMINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="METHYLPREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="FENOPROFEN CALCIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="IBUPROFEN AND FAMOTIDINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="PIROXICAM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="AZATHIOPRINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="NABUMETONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="FLURBIPROFEN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="MELOXICAM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="PREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="DICLOFENAC POTASSIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="DICLOFENAC SODIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="OXAPROZIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="HYDROCORTISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="DICLOFENAC POTASSIUM, FILM COATED">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="NAPROXEN SODIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="SULINDAC">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="DICLOFENAC SODIUM AND MISOPROSTOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="PREDNISOLONE SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="TOLMETIN SODIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="NAPROXEN AND ESOMEPRAZOLE MAGNESIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="CYCLOSPORINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="KETOPROFEN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="LIDOCAINE HYDROCHLORIDE, MENTHOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="LIDOCAINE AND MENTHOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="LIDOTHOL PATCH">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="ADALIMUMAB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="ADALIMUMAB-AACF">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="LIDOCAINE HYDROCHLORIDE, TRIAMCINOLONE ACETONIDE, POVIDONE-IODINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="ADALIMUMAB-ADBM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="rheumatoid arthritis" target="ADALIMUMAB-RYVK">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="lupus" target="TRIAMCINOLONE ACETONIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="lupus" target="METHYLPREDNISOLONE ACETATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">soft_tissue.jsonl</data>
+    </edge>
+    <edge source="lupus" target="KENALOG">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="lupus" target="DEXAMETHASONE SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">soft_tissue.jsonl</data>
+    </edge>
+    <edge source="lupus" target="METHYLPREDNISOLONE SODIUM SUCCINATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="lupus" target="PREDNISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lupus" target="HYDROXYCHLOROQUINE SULFATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lupus" target="DEXAMETHASONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lupus" target="METHYLPREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lupus" target="PREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lupus" target="HYDROCORTISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lupus" target="PREDNISOLONE SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lupus" target="LIDOCAINE HYDROCHLORIDE, TRIAMCINOLONE ACETONIDE, POVIDONE-IODINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="DEXAMETHASONE SODIUM PHOSPHATE" target="leukemia">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">soft_tissue.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="METHOTREXATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="SODIUM CATION, SODIUM BICARBONATE, ANHYDROUS DEXTROSE, MAGNESIUM SULFATE, POTASSIUM CHLORIDE, CALCIUM CHLORIDE, SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intrathecal.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="DOXORUBICIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="AZACITIDINE FOR">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="DECITABINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="FLUDARABINE PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="ALLOPURINOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="CYCLOPHOSPHAMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="NELARABINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="AZACITIDINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="BUSULFAN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="CLOFARABINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="IDARUBICIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="PEMIVIBART">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="BENDAMUSTINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="ARSENIC TRIOXIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="MITOXANTRONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="PREDNISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="METHYLPREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="IMATINIB MESYLATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="TRETINOIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="PREDNISOLONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="HYDROCORTISONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="CLOTRIMAZOLE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="HYDROXYUREA">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="IBRUTINIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="IMATINIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="DASATINIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="RYDAPT">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="PREDNISOLONE SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="MERCAPTOPURINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="PONATINIB HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="leukemia" target="RASBURICASE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="THIAMINE HYDROCHLORIDE INJECTION, SOLUTION" target="heart failure">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="BUMETANIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="FUROSEMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="THIAMINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="SODIUM NITROPRUSSIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="MILRINONE LACTATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="CHLOROTHIAZIDE SODIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="SACUBITRIL AND VALSARTAN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="ENALAPRIL MALEATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="AMLODIPINE BESYLATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="VERAPAMIL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="ATORVASTATIN CALCIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="VALSARTAN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="LISINOPRIL AND HYDROCHLOROTHIAZIDE TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="METOPROLOL TARTRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="LISINOPRIL AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="CARVEDILOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="CHLORTHALIDONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="TRANDOLAPRIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="OLMESARTAN MEDOXOMIL-HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="METOPROLOL SUCCINATE ER TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="BENAZEPRIL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="RAMIPRIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="SPIRONOLACTONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="DAPAGLIFLOZIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="LISINOPRIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="LOSARTAN POTASSIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="METOPROLOL SUCCINATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="IRBESARTAN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="AMLODIPINE AND OLMESARTAN MEDOXOMIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="OLMESARTAN MEDOXOMIL AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="DIGOXIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="LOSARTAN POTASSIUM AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="TORSEMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="NEBIVOLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="OLMESARTAN MEDOXOMIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="VALSARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="FELODIPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="INDAPAMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="ACETAZOLAMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="CAROSPIR">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="DILTIAZEM HYDROCHLORIDE EXTENDED-RELEASE TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="PRAZOSIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="DOXAZOSIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="METOLAZONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="NIFEDIPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="ATENOLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="NADOLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="FOSINOPIRL SODIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="DOXAZOSIN MESYLATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="TELMISARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="SPIRONOLACTONE AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="IRBESARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="CANDESARTAN CILEXETIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="EMPAGLIFLOZIN AND METFORMIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="AZILSARTAN KAMEDOXOMIL AND CHLORTHALIDONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="METOPROLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="TRANDOLAPRIL TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="PRAZOSIN HCL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="AMLODIPINE BESYLATE AND OLMESARTAN MEDOXOMIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="AMLODIPINE AND ATORVASTATIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="CAPTOPRIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="ATENOLOL AND CHLORTHALIDONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="TELMISARTAN AND AMLODIPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="METOPROLOL SUCCINATE ER">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="VERICIGUAT">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="EMPAGLIFLOZIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="ATORVASTATIN CALCIUM, FILM COATED">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="AMILORIDE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="AMLODIPINE VALSARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="IBUPROFEN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="SOTAGLIFLOZIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="EPLERENONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="heart failure" target="FUROSEMIDE, BENZALKONIUM CHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="FUROSEMIDE" target="hypertension">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="NALOXONE HYDROCHLORIDE" target="depression">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="depression" target="HYDROXYZINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intramuscular.jsonl</data>
+    </edge>
+    <edge source="depression" target="OLANZAPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="LAMOTRIGINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="AMITRIPTYLINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="VENLAFAXINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="PROCHLORPERAZINE MALEATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="FLUOXETINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="FLUOXETINE HCL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="IMIPRAMINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="OXAZEPAM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="DOXEPIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="FLUOXETINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="LURASIDONE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="CITALOPRAM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="NORTRIPTYLINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="EMOTIONAL HEALTH BOOSTER">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="EMOTIONAL REBALANCE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="DOXEPIN HCL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="ADRENALINUM, CHOLESTERINUM, FOLLICULINUM, HYPOTHALAMUS, OOPHORINUM, PULSATILLA">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="VENLAFAXINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="ALPRAZOLAM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="MORPHINE SULFATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="PAROXETINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="ADRENAL SUPPORT">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="TRIFLUOPERAZINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="depression" target="CITALOPRAM HYDROBROMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="HYDRALAZINE HYDROCHLORIDE" target="hypertension">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="ESMOLOL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="ESMOLOL HYDROCHLORIDE IN SODIUM CHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="NICARDIPINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TRAVOPROST OPHTHALMIC SOLUTION, 0.004%">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">ophthalmic.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TRAVOPROST">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">ophthalmic.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="DORZOLAMIDE HYDROCHLORIDE TIMOLOL MALEATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">ophthalmic.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TIMOLOL MALEATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="BIMATOPROST">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">ophthalmic.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="DORZOLAMIDE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">ophthalmic.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="BRIMONIDINE TARTRATE AND TIMOLOL MALEATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">ophthalmic.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="DORZOLAMIDE HYDROCHLORIDE AND TIMOLOL MALEATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">ophthalmic.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="BRINZOLAMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">ophthalmic.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="DDORZOLAMIDE HYDROCHLORIDE TIMOLOL MALEATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">ophthalmic.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="LATANOPROST">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">ophthalmic.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="LATANOPROST OPHTHALMIC SOLUTION 0.005%">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">ophthalmic.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="ENALAPRIL MALEATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="AMLODIPINE BESYLATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="VERAPAMIL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="DILTIAZEM HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="CHOLESTYRAMINE LIGHT">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="VALSARTAN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="LISINOPRIL AND HYDROCHLOROTHIAZIDE TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TAMSULOSIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="GAUNFACINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="CLONIDINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="NISOLDIPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="METOPROLOL TARTRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="LISINOPRIL AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="CARVEDILOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="CHLORTHALIDONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TRANDOLAPRIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="PROPRANOLOL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="ATORVASTATIN FILM COATED">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="OLMESARTAN MEDOXOMIL-HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="METOPROLOL SUCCINATE ER TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="BENAZEPRIL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="RAMIPRIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="SPIRONOLACTONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="ATORVASTATIN CALCIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="LISINOPRIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="LOSARTAN POTASSIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="METYROSINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="METOPROLOL SUCCINATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="IRBESARTAN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="PHENTERMINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="MINOXIDIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="AMLODIPINE AND BENAZEPRIL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="AMLODIPINE AND OLMESARTAN MEDOXOMIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="POTASSIUM CHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="OLMESARTAN MEDOXOMIL AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TRIAMTERENE AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="LOSARTAN POTASSIUM AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="COLESTIPOL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TORSEMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="GUANFACINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="NEBIVOLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="OLMESARTAN MEDOXOMIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="LABETALOL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TERAZOSIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="FENOFIBRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="VALSARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="FELODIPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="CHOLESTYRAMINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="PINDOLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="SILDENAFIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="INDAPAMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="CAROSPIR">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="MECAMYLAMINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="DILTIAZEM HYDROCHLORIDE EXTENDED-RELEASE TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="PRAZOSIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="SILDENAFIL CITRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="BISOPROLOL FUMARATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="DOXAZOSIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="METOLAZONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="NIFEDIPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="ATENOLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="NADOLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="FOSINOPIRL SODIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="ATORVASTATIN CALCIUM, FILM COATED">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="DOXAZOSIN MESYLATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TADALAFIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="PHENDIMETRAZINE TARTRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="PHENOXYBENZAMINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TELMISARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="SPIRONOLACTONE AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="IRBESARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="AMBRISENTAN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="CAPTOPRIL AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="CANDESARTAN CILEXETIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="AZILSARTAN KAMEDOXOMIL AND CHLORTHALIDONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="METOPROLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="AMLODIPINE BESYLATE AND BENAZEPRIL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TRANDOLAPRIL TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="PRAZOSIN HCL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TERAZOSIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="AMLODIPINE BESYLATE AND OLMESARTAN MEDOXOMIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="AMLODIPINE AND ATORVASTATIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="CAPTOPRIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="GUANFACINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="ATENOLOL AND CHLORTHALIDONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="BISOPROLOL FUMARATE AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="TELMISARTAN AND AMLODIPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="METOPROLOL SUCCINATE ER">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="AMILORIDE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="AMLODIPINE VALSARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="EPLERENONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="CLONIDINE TRANSDERMAL SYSTEM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">transdermal.jsonl</data>
+    </edge>
+    <edge source="hypertension" target="FUROSEMIDE, BENZALKONIUM CHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="DIAZEPAM" target="anxiety">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="HYDROXYZINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="SERTRALINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="DULOXETINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="LORAZEPAM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="PAROXETINE HYDROCHLORIDE HEMIHYDRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="PROCHLORPERAZINE MALEATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="HYDROXYZINE PAMOATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="BUSPIRONE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="ALPRAZOLAM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="OXAZEPAM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="DOXEPIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="VENLAFAXINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="ESCITALOPRAM ORAL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="DULOXETINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="PAROXETINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="ESCITALOPRAM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="VENLAFAXINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="L-TRYPTOPHAN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="PAROXETINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="ARNICA MONTANA, ANAMIRTA COCCULUS, POTASSIUM PHOSPHATE, GELSEMIUM SEMPERVIRENS, STRYCHNOS NUX VOMICA, SILVER NITRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="ESCITALOPRAM OXALATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="SERTRALINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="FOLLICULINUM, OOPHORINUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="EMOTIONAL REBALANCE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="DOXEPIN HCL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="TARAXACUM OFFICINALE, HYDRASTIS CANADENSIS, ACETYLCHOLINE CHLORIDE, HISTAMINUM HYDROCHLORICUM, ADRENALINUM, GABA (GAMMA-AMINOBUTYRIC ACID), NOREPINEPHRINE (BITARTRATE), TYRAMINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="TAURINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="GABA">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="SERTRALINE HCL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="MEPROBAMATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="PANAX GINSENG">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="AQUILEGIA VULGARIS, AVENA SATIVA, CHAMOMILLA, COFFEA CRUDA, CYPRIPEDIUM PUBESCENS, HUMULUS LUPULUS, HYPERICUM PERFORATUM, KALI PHOSPHORICUM, MELATONIN, MELISSA OFFICINALIS, NATRUM MURIATICUM, PASSIFLORA INCARNATA, VALERIANA OFFICINALIS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="ACONITUM NAPELLUS, ARGENTUM NITRICUM, ARSENICUM ALBUM, CALCAREA CARBONICA, IGNATIA AMARA, KALI CARBONICUM, LACHESIS MUTUS, NATRUM MURIATICUM, PHOSPHORUS, PULSATILLA (PRATENSIS), STAPHYSAGRIA, STRAMONIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="TRIFLUOPERAZINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="CELESTITE 6X">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="GARLIC, AVENA SATIVA FLOWERING TOP, ANGELICA ARCHANGELICA ROOT, ARABICA COFFEE BEAN, HOLY BASIL LEAF, PASSIFLORA EDULIS FLOWER, SCUTELLARIA LATERIFLORA WHOLE, VERBENA HASTATA TOP, AND MACROPIPER METHYSTICUM ROOT">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">sublingual.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="TILIA TOMENTOSA BUD">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">sublingual.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="POPULUS TREMULOIDES WHOLE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">sublingual.jsonl</data>
+    </edge>
+    <edge source="anxiety" target="DROSPIRENONE AND ETHINYL ESTRADIOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="OXYTOCIN" target="diabetes">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="SODIUM BICARBONATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="INSULIN LISPRO">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="DESMOPRESSIN ACETATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="INSULIN ASPART">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="GLIMEPIRIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="AMLODIPINE BESYLATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="EZETIMIBE AND SIMVASTATIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="VERAPAMIL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="GLIPIZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="SIMVASTATIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="SITAGLIPTIN AND METFORMIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="CHOLESTYRAMINE LIGHT">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="ATORVASTATIN CALCIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="VALSARTAN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="LISINOPRIL AND HYDROCHLOROTHIAZIDE TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="FENOFIBRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="METOPROLOL TARTRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="LISINOPRIL AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="METFORMIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="COLESEVELAM HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="ATORVASTATIN FILM COATED">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="OLMESARTAN MEDOXOMIL-HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="MEB PURI-MEGA">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="METOPROLOL SUCCINATE ER TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="BENAZEPRIL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="SPIRONOLACTONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="DAPAGLIFLOZIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="LISINOPRIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="LOSARTAN POTASSIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="LOVASTATIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="METOPROLOL SUCCINATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="IRBESARTAN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="PHENTERMINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="AMLODIPINE AND OLMESARTAN MEDOXOMIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="PIOGLITAZONE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="OMEGA-3-ACID ETHYL ESTERS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="OLMESARTAN MEDOXOMIL AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="MEB PURI-VEGA">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="LOSARTAN POTASSIUM AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="COLESTIPOL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="GLIPIZIDE AND METFORMIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="TORSEMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="NEBIVOLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="OLMESARTAN MEDOXOMIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="GLYBURIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="RAMIPRIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="VALSARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="GEMFIBROZIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="FELODIPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="PIOGLITAZONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="CHOLESTYRAMINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="ACARBOSE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="METFORMIN HCL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="CAROSPIR">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="DILTIAZEM HYDROCHLORIDE EXTENDED-RELEASE TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="PRAZOSIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="DOXAZOSIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="NIFEDIPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="ATENOLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="NADOLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="ATORVASTATIN CALCIUM, FILM COATED">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="DOXAZOSIN MESYLATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="PHENDIMETRAZINE TARTRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="TELMISARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="SPIRONOLACTONE AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="ALOGLIPTIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="NATEGLINIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="CANDESARTAN CILEXETIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="EMPAGLIFLOZIN AND METFORMIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="AZILSARTAN KAMEDOXOMIL AND CHLORTHALIDONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="METOPROLOL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="TICAGRELOR">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="PRAZOSIN HCL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="AMLODIPINE BESYLATE AND OLMESARTAN MEDOXOMIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="AMLODIPINE AND ATORVASTATIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="CAPTOPRIL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="METFORMIN HYDROCHLORIDE EXTENDED-RELEASE TABLETS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="ATENOLOL AND CHLORTHALIDONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="ALOGLIPTIN AND METFORMIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="TELMISARTAN AND AMLODIPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="METOPROLOL SUCCINATE ER">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="EMPAGLIFLOZIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="AMLODIPINE VALSARTAN AND HYDROCHLOROTHIAZIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="SITAGLIPTIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="ENALAPRIL MALEATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="BEXAGLIFLOZIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="SOTAGLIFLOZIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="EPLERENONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="DULAGLUTIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="INSULIN GLARGINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="LIRAGLUTIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="DASIGLUCAGON">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="ANACAULASE-BCDB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="MEB GLUCO-VITALITY PATCH">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">transdermal.jsonl</data>
+    </edge>
+    <edge source="diabetes" target="GLUCAGON">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="DOXORUBICIN HYDROCHLORIDE" target="ovarian cancer">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="ZOLEDRONIC ACID" target="prostate cancer">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="prostate cancer" target="DOCETAXEL ANHYDROUS">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="prostate cancer" target="DOCETAXEL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="prostate cancer" target="MITOXANTRONE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="prostate cancer" target="RUCAPARIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="prostate cancer" target="RELUGOLIX">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="prostate cancer" target="DUTASTERIDE AND TAMSULOSIN HYDROCHLORIDE CAPSULES">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="prostate cancer" target="ABIRATERONE ACETATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="prostate cancer" target="FINASTERIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="prostate cancer" target="TALAZOPARIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="prostate cancer" target="DUTASTERIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="prostate cancer" target="LEUPROLIDE ACETATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="DOCETAXEL ANHYDROUS" target="lung cancer">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="PEMETREXED DISODIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="GEMCITABINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="BEVACIZUMAB-AWWB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="PACLITAXEL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="DOCETAXEL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="VINORELBINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="AMIVANTAMAB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="ETOPOSIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="PACLITAXEL PROTEIN-BOUND PARTICLES">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="TRAMETINIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="LORLATINIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="GEFITINIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="ADAGRASIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="BRIGATINIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="lung cancer" target="PRALSETINIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="GEMCITABINE HYDROCHLORIDE" target="ovarian cancer">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="ovarian cancer" target="RUCAPARIB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="PARICALCITOL" target="chronic kidney disease">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="chronic kidney disease" target="ERYTHROPOIETIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="chronic kidney disease" target="DIFELIKEFALIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="chronic kidney disease" target="DARBEPOETIN ALFA">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="chronic kidney disease" target="SEVELAMER CARBONATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="chronic kidney disease" target="DAPAGLIFLOZIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="chronic kidney disease" target="CINACALCET">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="chronic kidney disease" target="CINACALCET HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="chronic kidney disease" target="EMPAGLIFLOZIN AND METFORMIN HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="chronic kidney disease" target="SOTAGLIFLOZIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="chronic kidney disease" target="SEVELAMER HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">parenteral.jsonl</data>
+    </edge>
+    <edge source="chronic kidney disease" target="SOMATROPIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="LEVETIRACETAM" target="epilepsy">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="LEVETIRACETAM INJECTION">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="DIVALPROEX SODIUM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="LAMOTRIGINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="TOPIRAMATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="GABAPENTIN">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="VALPROIC ACID">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="CARBAMAZEPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="ZONISAMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="FELBAMATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="LEVETIRACETAM ORAL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="ETHOSUXIMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="TOPIRAMATE SPINKLE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="OXCARBAZEPINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="epilepsy" target="CICLOPIROX">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">topical.jsonl</data>
+    </edge>
+    <edge source="DONANEMAB-AZBT" target="dementia">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="DONANEMAB-AZBT" target="alzheimer's disease">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">intravenous.jsonl</data>
+    </edge>
+    <edge source="dementia" target="RIVASTIGMINE TARTRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="dementia" target="DONEPEZIL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="dementia" target="MEMANTINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="dementia" target="MEMANTINE HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="dementia" target="GALANTAMINE HYDROBROMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="dementia" target="GALANTAMINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="dementia" target="MEMANTINE HCL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="dementia" target="RIVASTIGMINE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">transdermal.jsonl</data>
+    </edge>
+    <edge source="alzheimer's disease" target="DONEPEZIL HYDROCHLORIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="BUDESONIDE" target="crohn's disease">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="crohn's disease" target="USTEKINUMAB">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">subcutaneous.jsonl</data>
+    </edge>
+    <edge source="crohn's disease" target="ADALIMUMAB-ADBM">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">unknown.jsonl</data>
+    </edge>
+    <edge source="SALMETEROL XINAFOATE" target="chronic obstructive pulmonary disease">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="chronic obstructive pulmonary disease" target="PREDNISOLONE SODIUM PHOSPHATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">oral.jsonl</data>
+    </edge>
+    <edge source="chronic obstructive pulmonary disease" target="TIOTROPIUM BROMIDE AND OLODATEROL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="chronic obstructive pulmonary disease" target="ARFORMOTEROL TARTRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="chronic obstructive pulmonary disease" target="FORMOTEROL FUMARATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="chronic obstructive pulmonary disease" target="FLUTICASONE PROPIONATE AND SALMETEROL">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="chronic obstructive pulmonary disease" target="BUDESONIDE AND FORMOTEROL FUMARATE DIHYDRATE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+    <edge source="chronic obstructive pulmonary disease" target="IPRATROPIUM BROMIDE">
+      <data key="d1">unknown</data>
+      <data key="d2">unknown</data>
+      <data key="d3">respiratory_(inhalation).jsonl</data>
+    </edge>
+  </graph>
+</graphml>
