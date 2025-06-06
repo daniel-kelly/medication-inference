@@ -1,18 +1,44 @@
+#api_key: "niBOH6xHMCgaizNvXzBuEXWXnkAT3kWcheuKgoht"
+#batch_size: 100
+#max_requests_per_min: 240
+#checkpoint_file: "../data/checkpoint.json"
+#output_dir: "../data/raw"
+#allowed_product_types:
+#  - HUMAN PRESCRIPTION DRUG
+#  - HUMAN OTC DRUG
+#  - HUMAN PRESCRIPTION BIOLOGIC
+#essential_fields:
+#  - id
+#  - effective_time
+#  - generic_name
+#  - brand_name
+#  - manufacturer_name
+#  - product_ndc
+#  - substance_name
+#  - route
+#  - dosage_form
+#  - purpose
+#  - indications_and_usage
+#  - description
+#  - clinical_pharmacology
+
 api_key: "niBOH6xHMCgaizNvXzBuEXWXnkAT3kWcheuKgoht"
 batch_size: 100
-max_requests_per_min: 240
-checkpoint_file: "../data/checkpoint.json"
-output_dir: "../data/raw"
+max_requests_per_min: 10
+checkpoint_file: "checkpoint_ndc.json"
+output_dir: "../data/fda_output_mentions"
+allowed_product_types:
+  - HUMAN PRESCRIPTION DRUG
+  - HUMAN OTC DRUG
+  - HUMAN PRESCRIPTION BIOLOGIC
 essential_fields:
-  - id
-  - effective_time
   - generic_name
   - brand_name
-  - manufacturer_name
   - product_ndc
-  - substance_name
   - route
   - dosage_form
+  - substance_name
+  - manufacturer_name
   - purpose
   - indications_and_usage
   - description
