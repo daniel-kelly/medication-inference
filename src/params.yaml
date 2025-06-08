@@ -1,32 +1,9 @@
-#api_key: "niBOH6xHMCgaizNvXzBuEXWXnkAT3kWcheuKgoht"
-#batch_size: 100
-#max_requests_per_min: 240
-#checkpoint_file: "../data/checkpoint.json"
-#output_dir: "../data/raw"
-#allowed_product_types:
-#  - HUMAN PRESCRIPTION DRUG
-#  - HUMAN OTC DRUG
-#  - HUMAN PRESCRIPTION BIOLOGIC
-#essential_fields:
-#  - id
-#  - effective_time
-#  - generic_name
-#  - brand_name
-#  - manufacturer_name
-#  - product_ndc
-#  - substance_name
-#  - route
-#  - dosage_form
-#  - purpose
-#  - indications_and_usage
-#  - description
-#  - clinical_pharmacology
-
+# retrieve drug labels
 api_key: "niBOH6xHMCgaizNvXzBuEXWXnkAT3kWcheuKgoht"
 batch_size: 100
 max_requests_per_min: 10
-checkpoint_file: "checkpoint_ndc.json"
-output_dir: "../data/fda_output_mentions"
+checkpoint_file: "../data/checkpoint_ndc.json"
+output_dir: "../data/fda_drug_labels"
 allowed_product_types:
   - HUMAN PRESCRIPTION DRUG
   - HUMAN OTC DRUG
@@ -43,3 +20,12 @@ essential_fields:
   - indications_and_usage
   - description
   - clinical_pharmacology
+  - contraindications
+  - warnings
+  - adverse_reactions
+  - drug_interactions
+
+# extract indications from free text
+disease_dict_path: "../data/reference/diseases.json"
+label_input_dir: "../data/fda_drug_labels"
+drug_indication_output_dir: '../data/indication_extracts'
