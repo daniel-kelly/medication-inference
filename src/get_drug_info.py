@@ -3,6 +3,7 @@ import json
 import time
 import os
 import yaml
+from utils import get_field
 
 # Load parameters from YAML
 with open("params.yaml", "r") as f:
@@ -32,13 +33,12 @@ written_ndcs = set()
 
 ALL_NDC_PATH = os.path.join(OUTPUT_DIR, "all_ndcs.jsonl")
 
-def get_field(entry, field):
-    value = entry.get(field)
-    if value is None and "openfda" in entry:
-        value = entry["openfda"].get(field)
-    return value
-
 def fetch_ndc_data(product_ndc):
+    """
+
+    :param product_ndc:
+    :return:
+    """
     if product_ndc in ndc_cache:
         return ndc_cache[product_ndc]
     url = "https://api.fda.gov/drug/ndc.json"
@@ -91,7 +91,6 @@ while True:
     params = {
         "limit": BATCH_SIZE,
         "skip": skip,
-        "api_key": API_KEY
         "api_key": API_KEY
     }
 

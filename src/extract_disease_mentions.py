@@ -1,10 +1,14 @@
 import json
 import re
 import os
+import yaml
+from utils import get_field, get_first_available_field
+
 
 def load_disease_terms(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         return json.load(f)
+
 
 def flatten_disease_dict(nested_dict):
     flat_dict = {}
@@ -12,6 +16,7 @@ def flatten_disease_dict(nested_dict):
         for disease_name, pattern in diseases.items():
             flat_dict[disease_name] = pattern
     return flat_dict
+
 
 def extract_mentions(text, disease_terms):
     text = text.lower()
@@ -21,76 +26,6 @@ def extract_mentions(text, disease_terms):
             mentions.add(disease_name)
     return list(mentions)
 
-def get_drug_name(entry):
-    fields = ['generic_name', 'brand_name', 'substance_name']
-
-    # Try top-level fields
-    for field in fields:
-        val = entry.get(field)
-        if isinstance(val, list) and val:
-            return val[0]
-        elif isinstance(val, str):
-            return val
-
-    # Try openfda subfields
-    openfda = entry.get('openfda', {})
-    for field in fields:
-        val = openfda.get(field)
-        if isinstance(val, list) and val:
-            return val[0]
-        elif isinstance(val, str):
-            return val
-
-    return '[Unknown]'
-
-def get_route(entry):
-
-    val = entry.get('route')
-    if isinstance(val, list) and val:
-        return val[0]
-    elif isinstance(val, str):
-        return val
-
-    openfda = entry.get('openfda', {})
-    val = openfda.get('route')
-    if isinstance(val, list) and val:
-        return val[0]
-    elif isinstance(val, str):
-        return val
-
-    return None
-
-def get_dosage_form(entry):
-
-    val = entry.get('dosage_form')
-    if isinstance(val, list) and val:
-        return val[0]
-    elif isinstance(val, str):
-        return val
-
-    openfda = entry.get('openfda', {})
-    val = openfda.get('dosage_form')
-    if isinstance(val, list) and val:
-        return val[0]
-    elif isinstance(val, str):
-        return val
-    return None
-
-def get_manufacturer(entry):
-
-    val = entry.get('manufacturer_name')
-    if isinstance(val, list) and val:
-        return val[0]
-    elif isinstance(val, str):
-        return val
-
-    openfda = entry.get('openfda', {})
-    val = openfda.get('manufacturer_name')
-    if isinstance(val, list) and val:
-        return val[0]
-    elif isinstance(val, str):
-        return val
-    return None
 
 def process_fda_files(input_dir, disease_terms):
     results = []
@@ -109,14 +44,27 @@ def process_fda_files(input_dir, disease_terms):
                 usage_text = usage[0] if isinstance(usage, list) else usage
                 diseases = extract_mentions(usage_text, disease_terms)
                 if diseases:
-                    name = get_drug_name(entry)
-                    route = get_route(entry)
-                    form = get_dosage_form(entry)
-                    manufacturer = get_manufacturer(entry)
+                    name = get_first_available_field(entry, ['generic_name', 'brand_name', 'substance_name'])
+                    generic_name = get_field(entry, 'generic_name')
+                    brand_name = get_field(entry, 'brand_name')
+                    if generic_name and brand_name:
+                        generic_indication = 'G' if generic_name.strip().lower() == brand_name.strip().lower() else 'B'
+                    else:
+                        generic_indication = 'U'  # U for Unknown or Unclassified
+                    substance_name = get_field(entry, 'substance_name')
+                    route = get_field(entry, 'route')
+                    form = get_field(entry, 'dosage_form')
+                    manufacturer = get_field(entry, 'manufacturer_name')
+                    ndc = get_field(entry, 'product_ndc')
 
                     results.append({
                         'drug': name,
                         'diseases': diseases,
+                        'ndc': ndc,
+                        'generic_name': generic_name,
+                        'brand_name': brand_name,
+                        'generic_indication': generic_indication,
+                        'substance_name': substance_name,
                         'route': route,
                         'dosage_form': form,
                         'manufacturer_name': manufacturer,
@@ -126,20 +74,26 @@ def process_fda_files(input_dir, disease_terms):
 
 
 if __name__ == '__main__':
-    disease_dict_path = '../data/reference/diseases.json'
-    input_dir = '../data/fda_output'
-    output_path = '../data/indication_extracts/fda_extracted_disease_mentions.jsonl'
+
+    # Load parameters from YAML
+    with open("params.yaml", "r") as f:
+        config = yaml.safe_load(f)
+
+    disease_dict_path = config['disease_dict_path']
+    label_input_dir = config['label_input_dir']
+    drug_indication_output_dir = config['drug_indication_output_dir']
 
     # Load and flatten disease regex dictionary
     nested_diseases = load_disease_terms(disease_dict_path)
     disease_terms = flatten_disease_dict(nested_diseases)
 
     # Process all JSONL files in the target directory
-    extracted_data = process_fda_files(input_dir, disease_terms)
+    extracted_data = process_fda_files(label_input_dir, disease_terms)
 
     # Save results to JSONL file
-    with open(output_path, 'w', encoding='utf-8') as f_out:
+    with open(f'{drug_indication_output_dir}/extracted_drug_indications.jsonl', 'w', encoding='utf-8') as f_out:
         for entry in extracted_data:
             f_out.write(json.dumps(entry) + '\n')
 
-    print(f"Saved {len(extracted_data)} extracted entries to {output_path}")
+    print(
+        f"Saved {len(extracted_data)} extracted entries to {drug_indication_output_dir}/extracted_drug_indications.jsonl")
