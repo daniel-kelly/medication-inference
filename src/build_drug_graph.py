@@ -16,7 +16,7 @@ def load_extracted_mentions(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         for line in f:
             entry = json.loads(line)
-            drug = entry.get('generic_name')
+            drug = entry.get('brand_name')
             diseases = entry.get('diseases', [])
             route = entry.get('route')
             form = entry.get('dosage_form')
@@ -91,7 +91,7 @@ if __name__ == '__main__':
         },
         "solver": "barnesHut",
         "barnesHut": {
-          "gravitationalConstant": -8000,
+          "gravitationalConstant": -15000,
           "springLength": 15,
           "springConstant": 0.002,
           "damping": 0.08,
@@ -132,13 +132,14 @@ if __name__ == '__main__':
             tooltip += f"\nManufacturer: {', '.join(drug_data['manufacturer'])}"
 
         size = scale_size(degree_dict.get(node, 1))
+        font_size = 24 if node_type == "indication" else 16
         net.add_node(
             node,
             label=label,
             color=color,
             title=tooltip,
             size=size,
-            font={'size': 18},
+            font={'size': font_size},
             type=node_type  # <-- Add this
         )
 
