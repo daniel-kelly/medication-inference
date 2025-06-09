@@ -1,4 +1,6 @@
 # medication-inference
+Access the graph [here](https://daniel-kelly.github.io/medication-inference/)
+
 This project is an effort to become familiar with graph networks and visualisations, with the focus area being 
 pharmaceuticals and their usage. All data is either sourced from 
 the [FDA drug database API](https://open.fda.gov/apis/drug/ndc/) or is proprietary (e.g. `diseases.json`is my own data).
