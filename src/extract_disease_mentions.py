@@ -23,7 +23,7 @@ def extract_mentions(text, disease_terms):
     mentions = set()
     for disease_name, pattern in disease_terms.items():
         if re.search(pattern, text):
-            mentions.add(disease_name)
+            mentions.add(disease_name.upper())
     return list(mentions)
 
 
