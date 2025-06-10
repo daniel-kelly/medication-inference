@@ -284,23 +284,84 @@ if __name__ == '__main__':
     search_bar_script = '''
     <!-- Search bar -->
     <div style="position:fixed; top:20px; left:10px; z-index:1000; background:white; padding:10px; border-radius:5px;">
-      <input type="text" id="nodeSearch" placeholder="Search for drug or disease" style="width:250px; padding:5px;"/>
+      <input type="text" id="nodeSearch" placeholder="Search for drug or disease" style="width:250px; padding:5px;" autocomplete="off"/>
       <button onclick="searchNode()">Search</button>
+      <div id="autocompleteList" style="
+        position: absolute;
+        background: white;
+        border: 1px solid #d4d4d4;
+        max-height: 150px;
+        overflow-y: auto;
+        width: 250px;
+        display: none;
+        z-index: 1001;
+      "></div>
     </div>
-
+    
     <script type="text/javascript">
     window.addEventListener("load", function () {
       if (typeof network === 'undefined') {
         console.error("Network object not found.");
         return;
       }
-
+    
+      const searchInput = document.getElementById("nodeSearch");
+      const autocompleteList = document.getElementById("autocompleteList");
+    
+      // Get all node labels once
+      const allNodes = network.body.data.nodes.get();
+      const allNodeLabels = allNodes.map(n => n.label);
+    
+      searchInput.addEventListener("input", function () {
+        const val = this.value.trim().toLowerCase();
+        autocompleteList.innerHTML = "";
+        if (!val) {
+          autocompleteList.style.display = "none";
+          return;
+        }
+    
+        const matches = allNodeLabels.filter(label => label.toLowerCase().includes(val)).slice(0, 10);
+    
+        if (matches.length === 0) {
+          autocompleteList.style.display = "none";
+          return;
+        }
+    
+        matches.forEach(match => {
+          const item = document.createElement("div");
+          item.style.padding = "6px";
+          item.style.cursor = "pointer";
+    
+          // Highlight match substring
+          const idx = match.toLowerCase().indexOf(val);
+          item.innerHTML = `${match.substring(0, idx)}<strong>${match.substring(idx, idx + val.length)}</strong>${match.substring(idx + val.length)}`;
+    
+          item.addEventListener("click", () => {
+            searchInput.value = match;
+            autocompleteList.innerHTML = "";
+            autocompleteList.style.display = "none";
+            searchNode();  // Trigger search with exact match
+          });
+    
+          autocompleteList.appendChild(item);
+        });
+    
+        autocompleteList.style.display = "block";
+      });
+    
+      // Hide autocomplete if clicking outside input or list
+      document.addEventListener("click", (e) => {
+        if (e.target !== searchInput && e.target.parentNode !== autocompleteList) {
+          autocompleteList.innerHTML = "";
+          autocompleteList.style.display = "none";
+        }
+      });
+    
       window.searchNode = function () {
-        const input = document.getElementById("nodeSearch").value.toLowerCase();
+        const input = searchInput.value.toLowerCase();
         if (!input) return;
-        const matches = network.body.data.nodes.get().filter(n =>
-          n.label.toLowerCase().includes(input)
-        );
+    
+        const matches = allNodes.filter(n => n.label.toLowerCase().includes(input));
         if (matches.length === 0) {
           alert("No match");
           return;
@@ -311,6 +372,7 @@ if __name__ == '__main__':
       };
     });
     </script>
+
     '''
 
     info_panel_script = '''
