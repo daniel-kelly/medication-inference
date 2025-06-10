@@ -29,7 +29,9 @@
   },
   "Respiratory Diseases": {
     "Asthma": "\\basthma\\b",
+    "Allergic asthma": "\\ballergic asthma\\b",
     "Chronic obstructive pulmonary disease": "\\bchronic obstructive pulmonary disease\\b|\\bCOPD\\b",
+    "Chronic rhinitis": "\\bchronic rhinitis\\b",
     "Idiopathic pulmonary fibrosis": "\\bidiopathic pulmonary fibrosis\\b|\\bIPF\\b",
     "Cystic fibrosis": "\\bcystic fibrosis\\b|\\bCF\\b",
     "Pneumonia": "\\bpneumonia\\b",
@@ -51,7 +53,8 @@
     "Dementia": "\\bdementia\\b",
     "Huntington's disease": "\\bhuntington(?:'s)? disease\\b",
     "Restless legs syndrome": "\\brestless legs syndrome\\b|\\bRLS\\b",
-    "Tourette syndrome": "\\btourette(?:'s)? syndrome\\b"
+    "Tourette syndrome": "\\btourette(?:'s)? syndrome\\b",
+    "Duchenne Muscular Dystrophy": "\\bduchenne muscular dystrophy\\b|\\bDMD\\b"
   },
   "Cancers": {
     "Lung cancer": "\\blung cancer\\b",
@@ -82,7 +85,9 @@
     "Sarcoidosis": "\\bsarcoidosis\\b",
     "Vasculitis": "\\bvasculitis\\b",
     "Dermatomyositis": "\\bdermatomyositis\\b",
-    "Polymyositis": "\\bpolymyositis\\b"
+    "Polymyositis": "\\bpolymyositis\\b",
+    "Urticaria": "\\burticaria\\b",
+    "Food Allergy": "\\bfood allergy\\b"
   },
   "Hematologic / Rare Diseases": {
     "Hemophilia": "\\bhemophilia\\b",
