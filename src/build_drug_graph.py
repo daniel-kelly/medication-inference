@@ -1,7 +1,9 @@
 import os
+import re
 import json
 import networkx as nx
 from pyvis.network import Network
+import html
 
 
 def safe_attr(val):
@@ -15,6 +17,34 @@ def scale_size(degree, min_size=10, max_size=40):
 def truncate_string(s, l):
     s = str(s)
     return s if len(s) <= l else s[:l] + "..."
+
+def sanitize_title(text):
+    if not text:
+        return ""
+    return json.dumps(text)[1:-1]
+
+
+
+def find_disease_category(disease_name):
+
+    with open('../data/reference/diseases.json', 'r') as f:
+        disease_categories = json.load(f)
+
+    disease_name_lower = disease_name.lower()
+    for category, diseases in disease_categories.items():
+        for disease, pattern in diseases.items():
+            # Use re.search with ignore case and the pattern from JSON
+            if re.search(pattern, disease_name_lower, re.IGNORECASE):
+                return category
+    return "Other"  # fallback category if no match
+
+def group_diseases_by_category(disease_list):
+
+    grouped = {}
+    for disease in disease_list:
+        category = find_disease_category(disease)
+        grouped.setdefault(category, []).append(disease)
+    return grouped
 
 
 def load_extracted_mentions(file_path, extra_fields=None):
@@ -113,7 +143,8 @@ if __name__ == '__main__':
         width="100%",
         bgcolor="#1a1a1a",
         font_color="white",
-        notebook=True
+        notebook=False,
+        cdn_resources="in_line"
     )
 
     # net.barnes_hut(gravity=-30000, central_gravity=0.3, spring_length=100, spring_strength=0.01, damping=0.95)
@@ -170,7 +201,7 @@ if __name__ == '__main__':
         )
 
         # Start tooltip with basic info
-        tooltip_lines = [f"Type: {node_type}", f"Label: {truncate_string(label, 50)}"]
+        tooltip_lines = [f"<strong>Type:</strong> {node_type}", f"<strong>Label:</strong> {truncate_string(label, 50)}"]
 
         # Add dynamic attributes for drug nodes
         if node_type == "Medication":
@@ -179,7 +210,13 @@ if __name__ == '__main__':
                 drug_data = drug_attributes[node]
                 for field, values in drug_data.items():
                     truncated_vals = [truncate_string(v, 50) for v in values if v]
-                    tooltip_lines.append(f"{field.replace('_', ' ').title()}: {', '.join(truncated_vals)}")
+
+                    # Custom field name formatting
+                    field_display = field.replace('_', ' ').title().replace('Ndc', 'NDC')
+
+                    tooltip_lines.append(
+                        f"<strong>{field_display}:</strong> {', '.join(truncated_vals)}"
+                    )
 
             # Get connected disease nodes
             disease_neighbors = [
@@ -187,25 +224,35 @@ if __name__ == '__main__':
                 if graph.nodes[n].get("type") == "Indication"
             ]
             if disease_neighbors:
-                truncated_diseases = [truncate_string(d, 50) for d in disease_neighbors[:3]]
-                extra_count = len(disease_neighbors) - 3
-                if extra_count > 0:
-                    truncated_diseases.append(f"...(+{extra_count} more)")
-                tooltip_lines.append(f"Associated Diseases: {', '.join(truncated_diseases)}")
+                # Group diseases by category
+                grouped = group_diseases_by_category(disease_neighbors)
+
+                # Build HTML string with categories and bullet disease lists
+                category_html_lines = []
+                for category, diseases in grouped.items():
+                    # Optional: sort diseases alphabetically
+                    diseases = sorted(diseases)
+                    disease_list_html = "<ul>" + "".join(f"<li>{d}</li>" for d in diseases) + "</ul>"
+                    category_html_lines.append(f"<strong>{category}:</strong>{disease_list_html}")
+
+                tooltip_lines.append(
+                    "<br><strong>Associated Diseases:</strong><br>" + "<br>".join(category_html_lines))
 
         tooltip = "\n".join(tooltip_lines)
+        panel_info_html = "<br>".join(tooltip_lines)  # for use in HTML panel
 
         size = scale_size(degree_dict.get(node, 1))
         font_size = 24 if node_type == "Indication" else 16
 
+        # When adding node:
         net.add_node(
             node,
             label=label,
             color=color,
-            title=tooltip,
             size=size,
             font={'size': font_size},
-            type=node_type
+            type=node_type,
+            panel_info=panel_info_html  # panel content
         )
 
     # Add edges with fixed color
@@ -218,98 +265,111 @@ if __name__ == '__main__':
             alpha=0.2,
             id=f"edge-{i}"  # <-- Add unique ID
         )
+    from jinja2 import Environment, FileSystemLoader
+    import pyvis
+
+    # # Force Jinja to look in the correct template path
+    template_path = os.path.join(pyvis.__path__[0], 'templates')
+    Network.template_env = Environment(loader=FileSystemLoader(template_path))
 
     # Save visualization HTML
     output_html = "../docs/meds_indications.html"
-    net.show(output_html)
+    with open(output_html, 'w', encoding='utf-8') as f:
+        f.write(net.generate_html())
     print(f"Interactive graph saved to {output_html}")
 
     with open(output_html, "r", encoding="utf-8") as f:
         html = f.read()
 
-    enhancement_script = '''
-    <div id="infoPanel" style="
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        width: 320px;
-        max-height: 90vh;
-        overflow-y: auto;
-        padding: 15px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        font-family: Arial, sans-serif;
-        z-index: 9999;
-        display: none;
-    ">
-      <h3 id="panelTitle" style="margin-top: 0;"></h3>
-      <div id="panelContent"></div>
-      <button onclick="document.getElementById('infoPanel').style.display='none'"
-        style="position: absolute; top: 5px; right: 10px; background: transparent; border: none; font-size: 18px; cursor: pointer;">
-        ✖
-      </button>
-    </div>
-
+    search_bar_script = '''
+    <!-- Search bar -->
     <div style="position:fixed; top:20px; left:10px; z-index:1000; background:white; padding:10px; border-radius:5px;">
       <input type="text" id="nodeSearch" placeholder="Search for drug or disease" style="width:250px; padding:5px;"/>
       <button onclick="searchNode()">Search</button>
     </div>
 
     <script type="text/javascript">
-      function searchNode() {
-        const input = document.getElementById('nodeSearch').value.toLowerCase();
+    window.addEventListener("load", function () {
+      if (typeof network === 'undefined') {
+        console.error("Network object not found.");
+        return;
+      }
+
+      window.searchNode = function () {
+        const input = document.getElementById("nodeSearch").value.toLowerCase();
         if (!input) return;
-        const matches = network.body.data.nodes.get().filter(n => n.label.toLowerCase().includes(input));
+        const matches = network.body.data.nodes.get().filter(n =>
+          n.label.toLowerCase().includes(input)
+        );
         if (matches.length === 0) {
-          alert('No match');
+          alert("No match");
           return;
         }
         const nodeId = matches[0].id;
         network.selectNodes([nodeId]);
-        network.focus(nodeId, {scale: 1.5, animation: true});
-      }
+        network.focus(nodeId, { scale: 1.5, animation: true });
+      };
+    });
+    </script>
+    '''
 
-      // When a node is clicked, show info in panel
-      network.on("click", function (params) {
-        if (params.nodes.length === 0) {
-          // Hide panel if clicking on empty space
-          document.getElementById("infoPanel").style.display = "none";
+    info_panel_script = '''
+    <!-- Info panel -->
+    <div id="infoPanel" style="
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 320px;
+      padding: 20px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      font-family: Arial, sans-serif;
+      z-index: 9999;
+      display: none;
+      margin-bottom: 8px; 
+      line-height: 1.5;
+      max-height: 600px;
+      overflow-y: auto;
+
+    ">
+      <h2 id="panelTitle" style="margin: 0 0 10px 0; font-size: 24px; color: #000;"></h2>
+      <div id="panelDetails" style="font-size: 14px; color: #333;"></div>
+    </div>
+    
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        if (typeof network === 'undefined') {
+          console.error("Network object not found.");
           return;
         }
-
-        const nodeId = params.nodes[0];
-        const node = network.body.data.nodes.get(nodeId);
-
-        if (!node) return;
-
-        // Build panel content
-        const title = node.label || "Unnamed node";
-        const type = node.type || "unknown";
-
-        let content = `<strong>Type:</strong> ${type}<br/><br/>`;
-
-        if (node.title) {
-          const lines = node.title.split("\\n");
-          lines.forEach(line => {
-            const parts = line.split(":");
-            if (parts.length > 1) {
-              content += `<strong>${parts[0].trim()}:</strong> ${parts.slice(1).join(":").trim()}<br/>`;
-            } else {
-              content += `${line}<br/>`;
-            }
-          });
-        }
-
-        document.getElementById("panelTitle").innerText = title;
-        document.getElementById("panelContent").innerHTML = content;
-        document.getElementById("infoPanel").style.display = "block";
+    
+        network.on("click", function (params) {
+          if (params.nodes.length === 0) {
+            document.getElementById("infoPanel").style.display = "none";
+            return;
+          }
+        
+          const nodeId = params.nodes[0];
+          const node = network.body.data.nodes.get(nodeId);
+          if (!node || node.type !== "Medication") {
+            document.getElementById("infoPanel").style.display = "none";
+            return;
+          }
+        
+          const title = typeof node.label === "string" ? node.label.replace(/^"|"$/g, "") : "Unnamed";
+          const detailsHTML = node.panel_info || "<em>No additional details available.</em>";
+        
+          document.getElementById("panelTitle").innerText = title;
+          document.getElementById("panelDetails").innerHTML = detailsHTML;
+          document.getElementById("infoPanel").style.display = "block";
+        });
       });
     </script>
     '''
 
     # Insert enhanced interactivity tools after <body>
-    html = html.replace('<body>', f'<body>{enhancement_script}')
+    html = html.replace('<body>', '<body>\n' + search_bar_script + info_panel_script)
 
     with open(output_html, "w", encoding="utf-8") as f:
         f.write(html)

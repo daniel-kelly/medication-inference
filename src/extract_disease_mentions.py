@@ -82,6 +82,7 @@ if __name__ == '__main__':
     disease_dict_path = config['disease_dict_path']
     label_input_dir = config['label_input_dir']
     drug_indication_output_dir = config['drug_indication_output_dir']
+    os.makedirs(drug_indication_output_dir, exist_ok=True)
 
     # Load and flatten disease regex dictionary
     nested_diseases = load_disease_terms(disease_dict_path)
