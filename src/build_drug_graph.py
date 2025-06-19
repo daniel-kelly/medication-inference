@@ -227,7 +227,7 @@ if __name__ == '__main__':
     template_path = os.path.join(pyvis.__path__[0], 'templates')
     Network.template_env = Environment(loader=FileSystemLoader(template_path))
 
-    output_html = "../docs/meds_indications2.html"
+    output_html = "../docs/meds_indications.html"
     with open(output_html, 'w', encoding='utf-8') as f:
         f.write(net.generate_html())
 
