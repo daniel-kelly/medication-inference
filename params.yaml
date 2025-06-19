@@ -1,0 +1,57 @@
+# params.yaml
+
+api_key: "51lAtcQ31ZdEHWnwLXHsNbAfZSTsm9csJi9nQSa7"
+batch_size: 100
+max_requests_per_min: 60
+checkpoint_file: "../data/checkpoint.json"
+output_dir: "../data/fda_drug_labels"
+max_retries: 3
+
+allowed_product_types:
+  - HUMAN OTC DRUG
+  - HUMAN PRESCRIPTION DRUG
+  - HUMAN PRESCRIPTION DRUG PACKAGE
+  - HUMAN OTC DRUG PACKAGE
+  - HUMAN PRESCRIPTION BIOLOGIC PRODUCT
+
+excluded_product_classes:
+  - ALLERGEN
+  - VACCINE
+  - HOMEOPATHIC
+  - DIETARY SUPPLEMENT
+  - BLOOD PRODUCT
+
+essential_ndc_fields:
+  - product_ndc
+  - generic_name
+  - brand_name
+  - substance_name
+  - route
+  - dosage_form
+  - labeler_name
+  - manufacturer_name
+  - product_class
+  - product_type
+  - spl_id
+  - application_number
+  # openfda nested fields
+  - openfda.manufacturer_name
+  - openfda.rxcui
+  - openfda.spl_set_id
+  - openfda.is_original_packager
+  - openfda.nui
+  - openfda.pharm_class_moa
+  - openfda.pharm_class_cs
+  - openfda.pharm_class_epc
+  - openfda.unii
+
+
+essential_label_fields:
+  - indications_and_usage
+
+label_checkpoint_file: ../data/disease_extract_checkpoint.json
+label_output_dir: ../data/extracted_disease_terms/label_disease_terms
+ndc_input_file: ../data/fda_drug_labels/ndc_extracted.jsonl
+label_input_file: ../data/fda_drug_labels/label_extracted.jsonl
+disease_pattern_path: ../data/reference/diseases.json
+fuzzy_threshold: 90
