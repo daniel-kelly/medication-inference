@@ -1,27 +1,137 @@
-def html_search_bar():
+# html_components.py
+
+def html_cluster_legend():
     return """
-    <!-- Search bar -->
-    <div style="position:fixed; top:20px; left:10px; z-index:1000; background:white; padding:10px; border-radius:5px;">
-      <input type="text" id="nodeSearch" placeholder="Search for drug or disease" style="width:250px; padding:5px;" autocomplete="off"/>
-      <button onclick="searchNode()">Search</button>
-      <div id="autocompleteList" style="
-        position: absolute;
-        background: white;
-        border: 1px solid #d4d4d4;
-        max-height: 150px;
-        overflow-y: auto;
-        width: 250px;
-        display: none;
-        z-index: 1001;
-      "></div>
+    <div id="clusterPanel" style="position:fixed; top:180px; left:10px; z-index:1000; background:white; padding:10px; border-radius:5px; max-height:360px; overflow-y:auto; font-size:12px; width:360px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+      <strong>Toggle Clusters</strong><br>
+      <div id="clusterLegend" style="margin-top:8px;"></div>
     </div>
 
     <script type="text/javascript">
     window.addEventListener("load", function () {
-      if (typeof network === 'undefined') {
-        console.error("Network object not found.");
-        return;
+      if (typeof network === 'undefined') return;
+
+      const clusterColors = [
+      "#e6194b", // red
+      "#ffe119", // yellow
+      "#4363d8", // blue
+      "#f58231", // orange
+      "#911eb4", // purple
+      "#46f0f0", // cyan
+      "#f032e6", // magenta
+      "#fabebe", // light pink
+      "#008080", // teal
+      "#e6beff", // lavender
+      "#9a6324", // brown
+      "#fffac8", // pale yellow
+      "#800000"  // maroon
+    ];
+
+
+      const allNodes = network.body.data.nodes.get();
+      const clusterLegendContainer = document.getElementById("clusterLegend");
+
+      let visibleClusters = new Set();
+
+      function updateVisibilityAndColors() {
+        const nodeUpdates = [];
+
+        // Update medication nodes
+        allNodes.forEach(node => {
+          if (node.cluster_id !== undefined && node.cluster_id !== null) {
+            const isVisible = visibleClusters.has(node.cluster_id);
+            nodeUpdates.push({
+              id: node.id,
+              hidden: !isVisible,
+              color: isVisible ? clusterColors[node.cluster_id % clusterColors.length] : '#ddd'
+            });
+          } else {
+            // Non-clustered nodes visible by default
+            nodeUpdates.push({ id: node.id, hidden: false, color: node.color || '#ccc' });
+          }
+        });
+
+        network.body.data.nodes.update(nodeUpdates);
+
+        // Hide disease nodes with no visible meds
+        const diseaseUpdates = [];
+        allNodes.forEach(node => {
+          if (node.type === "Indication") {
+            const neighbors = network.getConnectedNodes(node.id);
+            const hasVisibleMed = neighbors.some(nid => {
+              const medNode = network.body.data.nodes.get(nid);
+              return medNode && !medNode.hidden && medNode.type === "Medication";
+            });
+            diseaseUpdates.push({ id: node.id, hidden: !hasVisibleMed });
+          }
+        });
+
+        network.body.data.nodes.update(diseaseUpdates);
       }
+
+      function buildClusterLegend() {
+        clusterLegendContainer.innerHTML = "";
+        const clusters = [...new Set(allNodes.map(n => n.cluster_id).filter(cid => cid !== undefined))].sort((a,b) => a - b);
+
+        clusters.forEach(cid => {
+          const color = clusterColors[cid % clusterColors.length];
+
+          const label = document.createElement("label");
+          label.style.display = "flex";
+          label.style.alignItems = "center";
+          label.style.marginTop = "4px";
+
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.checked = true;
+          checkbox.style.marginRight = "6px";
+          checkbox.dataset.clusterId = cid;
+
+          checkbox.addEventListener("change", (e) => {
+            if (e.target.checked) {
+              visibleClusters.add(cid);
+            } else {
+              visibleClusters.delete(cid);
+            }
+            updateVisibilityAndColors();
+          });
+
+          const colorBox = document.createElement("div");
+          colorBox.style.width = "12px";
+          colorBox.style.height = "12px";
+          colorBox.style.backgroundColor = color;
+          colorBox.style.border = "1px solid #ccc";
+          colorBox.style.marginRight = "6px";
+
+          label.appendChild(checkbox);
+          label.appendChild(colorBox);
+          const clusterName = (typeof clusterLabels !== 'undefined' && clusterLabels[cid]) ? clusterLabels[cid] : `Cluster ${cid}`;
+          label.appendChild(document.createTextNode(clusterName));
+
+          clusterLegendContainer.appendChild(label);
+        });
+
+        // Initially all clusters visible
+        visibleClusters = new Set(clusters);
+        updateVisibilityAndColors();
+      }
+
+      buildClusterLegend();
+    });
+    </script>
+    """
+
+def html_search_bar():
+    return """
+    <div style="position:fixed; top:20px; left:10px; z-index:1000; background:white; padding:10px; border-radius:5px; max-width: 280px;">
+      <input type="text" id="nodeSearch" placeholder="Search for drug or disease" style="width:250px; padding:5px;" autocomplete="off"/>
+      <button onclick="searchNode()">Search</button>
+      <div id="autocompleteList" style="position: absolute; background: white; border: 1px solid #d4d4d4; max-height: 150px; overflow-y: auto; width: 250px; display: none; z-index: 1001;"></div>
+    </div>
+
+    <script type="text/javascript">
+    window.addEventListener("load", function () {
+      if (typeof network === 'undefined') return;
 
       const searchInput = document.getElementById("nodeSearch");
       const autocompleteList = document.getElementById("autocompleteList");
@@ -29,6 +139,7 @@ def html_search_bar():
       const allNodes = network.body.data.nodes.get();
       const allNodeLabels = allNodes.map(n => n.label);
 
+      // Autocomplete behavior
       searchInput.addEventListener("input", function () {
         const val = this.value.trim().toLowerCase();
         autocompleteList.innerHTML = "";
@@ -38,7 +149,6 @@ def html_search_bar():
         }
 
         const matches = allNodeLabels.filter(label => label.toLowerCase().includes(val)).slice(0, 10);
-
         if (matches.length === 0) {
           autocompleteList.style.display = "none";
           return;
@@ -48,23 +158,21 @@ def html_search_bar():
           const item = document.createElement("div");
           item.style.padding = "6px";
           item.style.cursor = "pointer";
-
           const idx = match.toLowerCase().indexOf(val);
           item.innerHTML = `${match.substring(0, idx)}<strong>${match.substring(idx, idx + val.length)}</strong>${match.substring(idx + val.length)}`;
-
           item.addEventListener("click", () => {
             searchInput.value = match;
             autocompleteList.innerHTML = "";
             autocompleteList.style.display = "none";
-            searchNode();  // Trigger search with exact match
+            searchNode();
           });
-
           autocompleteList.appendChild(item);
         });
 
         autocompleteList.style.display = "block";
       });
 
+      // Hide autocomplete on click away
       document.addEventListener("click", (e) => {
         if (e.target !== searchInput && e.target.parentNode !== autocompleteList) {
           autocompleteList.innerHTML = "";
@@ -72,13 +180,13 @@ def html_search_bar():
         }
       });
 
+      // Search node function
       window.searchNode = function () {
         const input = searchInput.value.toLowerCase();
         if (!input) return;
-
         const matches = allNodes.filter(n => n.label.toLowerCase().includes(input));
         if (matches.length === 0) {
-          alert("No match");
+          alert("No match found.");
           return;
         }
         const nodeId = matches[0].id;
