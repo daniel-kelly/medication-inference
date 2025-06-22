@@ -194,7 +194,8 @@ class LabelExtractor:
                 combined = uppercase_all_text_values(combined)
 
                 # Reorder keys before writing
-                desired_key_order = ["spl_id", "product_ndc", "brand_name", "generic_name", "disease_mentions"]
+                desired_key_order = ["spl_id", "product_ndc", "brand_name", "generic_name", "disease_mentions",
+                                     "route", "dosage_form", "labeler_name", "product_type"]
                 combined = reorder_fields(combined, desired_key_order)
 
                 extracted.append(combined)
