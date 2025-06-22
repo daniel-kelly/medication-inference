@@ -3,74 +3,16 @@ import re
 import json
 import networkx as nx
 from pyvis.network import Network
-from html_components import html_search_bar, html_info_panel
+from utils import load_extracted_mentions, safe_attr, scale_size, truncate_string, group_diseases_by_category
+from html_components import html_search_bar, html_info_panel, html_cluster_legend
+from graph_utils import assign_clusters_greedy, assign_clusters_louvain, generate_cluster_labels
+
 from collections import defaultdict
+
+
 from jinja2 import Environment, FileSystemLoader
 import pyvis
 
-
-def safe_attr(val):
-    if val is None:
-        return "unknown"
-    if isinstance(val, (list, dict)):
-        return json.dumps(val)  # Convert list/dict to JSON string
-    return val
-
-
-def scale_size(degree, min_size=10, max_size=40):
-    return min(max(degree * 3, min_size), max_size)
-
-
-def truncate_string(s, l):
-    s = str(s)
-    return s if len(s) <= l else s[:l] + "..."
-
-
-def sanitize_title(text):
-    if not text:
-        return ""
-    return json.dumps(text)[1:-1]
-
-
-def find_disease_category(disease_name):
-    with open('../data/reference/diseases.json', 'r') as f:
-        disease_categories = json.load(f)
-
-    disease_name_lower = disease_name.lower()
-    for category, diseases in disease_categories.items():
-        for disease, pattern in diseases.items():
-            if re.search(pattern, disease_name_lower, re.IGNORECASE):
-                return category
-    return "Other"
-
-
-def group_diseases_by_category(disease_list):
-    grouped = {}
-    for disease in disease_list:
-        category = find_disease_category(disease)
-        grouped.setdefault(category, []).append(disease)
-    return grouped
-
-
-def load_extracted_mentions(file_path, extra_fields=None):
-    if extra_fields is None:
-        extra_fields = []
-
-    pairs = []
-    with open(file_path, 'r', encoding='utf-8') as f:
-        for line in f:
-            entry = json.loads(line)
-            drug = entry.get('brand_name')
-            diseases = [m["disease"] for m in entry.get('disease_mentions', [])]
-
-            if not drug or not diseases:
-                continue
-
-            extra_info = {field: entry.get(field) for field in extra_fields}
-            for disease in diseases:
-                pairs.append((drug, disease, extra_info))
-
-    return pairs
 
 
 def build_graph_from_extracted(file_path, extra_fields):
@@ -106,8 +48,7 @@ def aggregate_drug_attributes(graph, fields_to_aggregate):
 
 if __name__ == '__main__':
     extracted_jsonl = "../data/extracted_disease_terms/label_disease_terms/label_extracted_with_diseases.jsonl"
-    extra_fields = ['ndc', 'brand_name', 'generic_name', 'generic_indication',
-                    'substance_name', 'route', 'dosage_form', 'manufacturer_name']
+    extra_fields = ['product_ndc', 'brand_name', 'generic_name', 'route', 'dosage_form', 'labeler_name']
 
     print(f"Processing extracted mentions file: {os.path.basename(extracted_jsonl)}")
     graph = build_graph_from_extracted(extracted_jsonl, extra_fields)
@@ -170,11 +111,16 @@ if __name__ == '__main__':
     """)
 
     drug_attributes = aggregate_drug_attributes(graph, extra_fields)
+    #assign_clusters(graph, node_type="Medication")  # or "Indication" if you prefer
+
+    cluster_map = assign_clusters_louvain(graph, node_type="Medication", resolution=0.8)
+    cluster_labels = generate_cluster_labels(graph, cluster_map)
+    cluster_labels_json = json.dumps(cluster_labels)
 
     for node, data in graph.nodes(data=True):
         node_type = data.get("type", "unknown")
         label = str(node)
-        color = "#4dd0e1" if node_type == "Medication" else "#aed581" if node_type == "Indication" else "#e0e0e0"
+        color = "#4dd0e1" if node_type == "Medication" else "#79db60" if node_type == "Indication" else "#e0e0e0"
 
         tooltip_lines = [f"<strong>Type:</strong> {node_type}", f"<strong>Label:</strong> {truncate_string(label, 50)}"]
 
@@ -183,7 +129,7 @@ if __name__ == '__main__':
                 drug_data = drug_attributes[node]
                 for field, values in drug_data.items():
                     truncated_vals = [truncate_string(v, 50) for v in values if v]
-                    field_display = field.replace('_', ' ').title().replace('Ndc', 'NDC')
+                    field_display = field.replace('_', ' ').title().replace('product_ndc', 'NDC')
                     tooltip_lines.append(f"<strong>{field_display}:</strong> {', '.join(truncated_vals)}")
 
             disease_neighbors = [
@@ -211,16 +157,17 @@ if __name__ == '__main__':
             size=size,
             font={'size': font_size},
             type=node_type,
-            panel_info=panel_info_html
+            panel_info=panel_info_html,
+            cluster_id = data.get("cluster_id", -1)
         )
 
-    edge_color = "#50C878"
+    edge_color = "#79db60"
     for i, (source, target, attrs) in enumerate(graph.edges(data=True)):
         net.add_edge(
             source,
             target,
             color=edge_color,
-            alpha=0.2,
+            alpha=0.01,
             id=f"edge-{i}"
         )
 
@@ -238,7 +185,12 @@ if __name__ == '__main__':
 
     search_bar_script = html_search_bar()
     info_panel_script = html_info_panel()
-    html = html.replace('<body>', '<body>\n' + search_bar_script + info_panel_script)
+    cluster_panel_script = html_cluster_legend()
+    cluster_names = f'<script>const clusterLabels = {cluster_labels_json};</script>\n'
+
+
+    html = html.replace('<body>', '<body>\n' + search_bar_script + info_panel_script +
+                        cluster_panel_script + cluster_names)
 
     with open(output_html, "w", encoding="utf-8") as f:
         f.write(html)

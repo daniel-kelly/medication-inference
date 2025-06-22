@@ -3,6 +3,7 @@ import yaml
 import json
 import time
 import requests
+import re
 
 
 def load_yaml_config(path):
@@ -76,3 +77,68 @@ def flatten_disease_dict(nested_dict):
                 "pattern": pattern
             })
     return flat_list
+
+
+
+def safe_attr(val):
+    if val is None:
+        return "unknown"
+    if isinstance(val, (list, dict)):
+        return json.dumps(val)  # Convert list/dict to JSON string
+    return val
+
+
+def scale_size(degree, min_size=10, max_size=40):
+    return min(max(degree * 3, min_size), max_size)
+
+
+def truncate_string(s, l):
+    s = str(s)
+    return s if len(s) <= l else s[:l] + "..."
+
+
+def sanitize_title(text):
+    if not text:
+        return ""
+    return json.dumps(text)[1:-1]
+
+
+def find_disease_category(disease_name):
+    with open('../data/reference/diseases.json', 'r') as f:
+        disease_categories = json.load(f)
+
+    disease_name_lower = disease_name.lower()
+    for category, diseases in disease_categories.items():
+        for disease, pattern in diseases.items():
+            if re.search(pattern, disease_name_lower, re.IGNORECASE):
+                return category
+    return "Other"
+
+
+def group_diseases_by_category(disease_list):
+    grouped = {}
+    for disease in disease_list:
+        category = find_disease_category(disease)
+        grouped.setdefault(category, []).append(disease)
+    return grouped
+
+
+def load_extracted_mentions(file_path, extra_fields=None):
+    if extra_fields is None:
+        extra_fields = []
+
+    pairs = []
+    with open(file_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            entry = json.loads(line)
+            drug = entry.get('brand_name')
+            diseases = [m["disease"] for m in entry.get('disease_mentions', [])]
+
+            if not drug or not diseases:
+                continue
+
+            extra_info = {field: entry.get(field) for field in extra_fields}
+            for disease in diseases:
+                pairs.append((drug, disease, extra_info))
+
+    return pairs
