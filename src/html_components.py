@@ -1,5 +1,91 @@
 # html_components.py
 
+def html_hop_explorer():
+    return """
+    <div id="hopPanel" style="position:fixed; top:560px; left:10px; z-index:1000; background:white; padding:10px; border-radius:5px; font-size:12px; width:360px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+      <strong>Disease Hop Explorer</strong><br>
+      <label><input type="checkbox" id="hopModeToggle"> Enable explorer</label><br>
+      <label>n hops:
+        <input type="number" id="hopDepth" value="1" min="1" max="5" style="width:40px; margin-left:6px;" />
+      </label>
+      <button id="resetGraphBtn" style="margin-left:10px;">Reset</button>
+    </div>
+
+    <script type="text/javascript">
+    window.addEventListener("load", function () {
+      if (typeof network === 'undefined') return;
+
+      const allNodes = network.body.data.nodes.get();
+      const allEdges = network.body.data.edges.get();
+
+      const nodeMap = new Map(allNodes.map(n => [n.id, n]));
+      const edgeMap = new Map();
+      allEdges.forEach(edge => {
+        if (!edgeMap.has(edge.from)) edgeMap.set(edge.from, []);
+        if (!edgeMap.has(edge.to)) edgeMap.set(edge.to, []);
+        edgeMap.get(edge.from).push(edge.to);
+        edgeMap.get(edge.to).push(edge.from);  // undirected
+      });
+
+      const originalNodeStates = new Map(allNodes.map(n => [n.id, { hidden: n.hidden, color: n.color }]));
+
+      function resetGraph() {
+        const restoredNodes = allNodes.map(n => {
+          const orig = originalNodeStates.get(n.id);
+          return { id: n.id, hidden: orig.hidden, color: orig.color };
+        });
+        network.body.data.nodes.update(restoredNodes);
+      }
+
+      function bfsDiseaseHops(startId, maxHops) {
+        const visited = new Set();
+        const queue = [{ id: startId, depth: 0 }];
+        const result = new Set();
+
+        while (queue.length > 0) {
+          const { id, depth } = queue.shift();
+          if (visited.has(id)) continue;
+          visited.add(id);
+          result.add(id);
+
+          if (depth >= maxHops) continue;
+
+          const neighbors = edgeMap.get(id) || [];
+          for (const neighbor of neighbors) {
+            queue.push({ id: neighbor, depth: depth + 1 });
+          }
+        }
+
+        return result;
+      }
+
+      network.on("click", function (params) {
+        const hopEnabled = document.getElementById("hopModeToggle").checked;
+        const hopDepth = parseInt(document.getElementById("hopDepth").value, 10);
+        if (!hopEnabled || isNaN(hopDepth) || params.nodes.length === 0) return;
+
+        const clickedNodeId = params.nodes[0];
+        const node = nodeMap.get(clickedNodeId);
+        if (!node || node.type !== "Indication") return;
+
+        const visibleIds = bfsDiseaseHops(clickedNodeId, hopDepth * 2); // each hop includes both node types
+
+        const updated = allNodes.map(n => ({
+          id: n.id,
+          hidden: !visibleIds.has(n.id)
+        }));
+
+        network.body.data.nodes.update(updated);
+      });
+
+      document.getElementById("resetGraphBtn").addEventListener("click", () => {
+        resetGraph();
+      });
+    });
+    </script>
+    """
+
+
 def html_cluster_legend():
     return """
     <div id="clusterPanel" style="position:fixed; top:180px; left:10px; z-index:1000; background:white; padding:10px; border-radius:5px; max-height:360px; overflow-y:auto; font-size:12px; width:360px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
