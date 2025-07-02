@@ -80,13 +80,13 @@ if __name__ == '__main__':
     {
     "nodes": {
         "font": {
-                "size": 30,
+                "size": 100,
                 "face": "arial"
                     },
             "scaling": 
                 {
-                "min": 10,
-                "max": 30
+                "min": 30,
+                "max": 60
                     }
             },
       "physics": {

@@ -148,13 +148,30 @@ class LabelExtractor:
     def extract_disease_mentions_from_label(self, label_data):
         mentions = []
 
+        section_blacklist = [
+            "limitations of use",
+            "warnings",
+            "precautions",
+            "not recommended",
+            "contraindicated",
+            "use in specific populations"
+        ]
+
         for field in self.essential_label_fields:
             raw_value = label_data.get(field)
             if not raw_value:
                 continue
             text = extract_text_from_nested(raw_value)
+
             if not text.strip():
                 continue
+
+            # ✨ Check for known cautionary sections in this chunk of text
+            lowered = text.lower()
+            if any(bad_section in lowered for bad_section in section_blacklist):
+                continue  # ❌ Skip this field entirely if it's likely a caution or exclusion section
+
+            # ✅ Proceed with disease extraction
             mentions.extend(extract_diseases_from_text(text, self.flat_diseases, self.fuzzy_threshold))
 
         # Deduplicate across fields
@@ -163,6 +180,7 @@ class LabelExtractor:
             key = (m['disease'].strip().lower(), m['method'])
             if key not in seen or m['confidence'] > seen[key]['confidence']:
                 seen[key] = m
+
         return list(seen.values())
 
     def run(self):
