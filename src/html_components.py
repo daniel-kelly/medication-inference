@@ -85,6 +85,65 @@ def html_hop_explorer():
     </script>
     """
 
+def html_node_size_panel():
+    return """
+    <div id="nodeSizePanel" style="
+      position: fixed;
+      bottom: 20px;
+      left: 10px;
+      z-index: 1000;
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      width: 360px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    ">
+      <label for="nodeSizeRange" style="white-space: nowrap; margin: 0;">Node size:</label>
+      <input id="nodeSizeRange" type="range" min="0.1" max="2.0" step="0.1" value="1" style="flex-grow: 1;">
+      <span id="nodeSizeValue" style="min-width: 30px; text-align: center;">1.0</span>
+
+    <script type="text/javascript">
+    window.addEventListener("load", function () {
+      if (typeof network === 'undefined') return;
+
+      // Precompute degree (number of edges) for each node
+      const edges = network.body.data.edges.get();
+      const degreeMap = new Map();
+      edges.forEach(edge => {
+        degreeMap.set(edge.from, (degreeMap.get(edge.from) || 0) + 1);
+        degreeMap.set(edge.to, (degreeMap.get(edge.to) || 0) + 1);
+      });
+
+      const nodeSizeInput = document.getElementById("nodeSizeRange");
+      const nodeSizeValue = document.getElementById("nodeSizeValue");
+
+      nodeSizeInput.addEventListener("input", function() {
+        const scale = parseFloat(this.value);
+        nodeSizeValue.innerText = scale.toFixed(1);
+
+        const nodes = network.body.data.nodes.get();
+        const baseSize = 15;  // base size for zero-degree nodes
+
+        const updatedNodes = nodes.map(node => {
+          const degree = degreeMap.get(node.id) || 0;
+          const size = (baseSize + Math.sqrt(degree)) * scale;  // size based on degree scaled by slider
+          return {
+            id: node.id,
+            size: size,
+          };
+        });
+
+        network.body.data.nodes.update(updatedNodes);
+      });
+    });
+    </script>
+    </div>
+    """
+
 
 def html_cluster_legend():
     return """

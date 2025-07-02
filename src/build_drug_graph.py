@@ -4,7 +4,8 @@ import json
 import networkx as nx
 from pyvis.network import Network
 from utils import load_extracted_mentions, safe_attr, scale_size, truncate_string, group_diseases_by_category
-from html_components import html_search_bar, html_info_panel, html_cluster_legend, html_hop_explorer
+from html_components import (html_search_bar, html_info_panel, html_cluster_legend, html_hop_explorer,
+                             html_node_size_panel)
 from graph_utils import assign_clusters_greedy, assign_clusters_louvain, generate_cluster_labels
 
 from collections import defaultdict
@@ -185,13 +186,15 @@ if __name__ == '__main__':
 
     search_bar_script = html_search_bar()
     info_panel_script = html_info_panel()
+
+    node_size_slider = html_node_size_panel()
     cluster_panel_script = html_cluster_legend()
     cluster_names = f'<script>const clusterLabels = {cluster_labels_json};</script>\n'
 
     hop_explorer_script = html_hop_explorer()
 
 
-    html = html.replace('<body>', '<body>\n' + search_bar_script + info_panel_script +
+    html = html.replace('<body>', '<body>\n' + search_bar_script + info_panel_script + node_size_slider +
                         cluster_panel_script + hop_explorer_script + cluster_names)
 
     with open(output_html, "w", encoding="utf-8") as f:
